@@ -7,7 +7,7 @@ public class SimpleMap {
  public static void main(String[] args) {
 	//Create HashMap
      Map<String , String> studentGrades = new HashMap<String, String>();
-      
+	// comment       
      //Add Key/Value pairs
      studentGrades.put("Alvin", "A+");
      studentGrades.put("Alan", "A");
