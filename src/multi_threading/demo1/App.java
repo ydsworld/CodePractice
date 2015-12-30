@@ -1,5 +1,6 @@
 package multi_threading.demo1;
 
+//create Threading extending Thread Class
 class Runner extends Thread{
 	public void run(){
 		for(int i=0; i<10; i++){
@@ -20,5 +21,6 @@ public class App {
 		runner1.start();
 		Runner runner2 = new Runner();
 		runner2.start();
+		//change in master
 	}
 }

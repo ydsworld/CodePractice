@@ -1,5 +1,6 @@
 package multi_threading.demo2;
 
+//Create Threaing implementing runnable
 class Runner implements Runnable {
 	public void run() {
 		for(int i=0; i<10; i++){
