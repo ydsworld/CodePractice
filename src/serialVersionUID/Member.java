@@ -7,6 +7,7 @@ import java.io.Serializable;
  */
 public class Member implements Serializable{
 
+    // if you not provide this UID ,, then JVM will auto generate
     private static final long serialVersionUID = 1L;
 
     String firstName;
