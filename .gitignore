@@ -1,10 +1,6 @@
 /.idea
 
 *.class
-
-*.prefs
 /bin/
-*.gitignore
-*.D*
 /.idea/workspace.xml
-*.gitignore~
+.idea
