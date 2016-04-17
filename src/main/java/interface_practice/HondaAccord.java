@@ -5,7 +5,6 @@ package interface_practice;
  */
 public class HondaAccord implements Vehicle{
 
-    @Override
     public void accelerate() {
         System.out.println("Honda Accord Accelerate");
     }
