@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7511a614-4a6f-4d5d-a53a-5b3d9939bcf6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodePractice.iml" afterPath="$PROJECT_DIR$/CodePractice.iml" />
     </list>
     <ignored path="CodePractice.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -640,7 +637,14 @@
       <option name="project" value="LOCAL" />
       <updated>1460914373014</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary=".idea files">
+      <created>1460914476728</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1460914476728</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView">
@@ -695,7 +699,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Using IntelliJ to commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Using IntelliJ to commit" />
+    <MESSAGE value=".idea files" />
+    <option name="LAST_COMMIT_MESSAGE" value=".idea files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
