@@ -3,8 +3,7 @@ package enum_practice;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.util.EnumMap;
-import java.util.Map;
+import java.util.*;
 
 
 public class JavaEnumExample {
@@ -19,11 +18,11 @@ public class JavaEnumExample {
 
         // Let's initialize store, by storing 10 canes of each drink
         // Enum provides an implicit values() method, which can be used to iterate over Enum
-        for(SoftDrink drink : SoftDrink.values()){
+        for (SoftDrink drink : SoftDrink.values()) {
             store.put(drink, 10);
         }
 
-        System.out.println(SoftDrink.THUMPS_UP.getPrice());
+        System.out.println(SoftDrink.THUMPS_UP);
 
         // let's print what is in EnumStore
         for(Map.Entry<SoftDrink, Integer> entry: store.entrySet()){
@@ -31,8 +30,18 @@ public class JavaEnumExample {
 
                     + " Price: " + entry.getKey().getPrice());
         }
-    }
+
+        Map<SoftDrink, String> enumtest = new HashMap<>();
+
+        enumtest.put(SoftDrink.COKE, "This is coke");
+        enumtest.put(SoftDrink.LIME, "This is Limka");
+
+        if(enumtest.containsKey(SoftDrink.COKE)){
+            System.out.printf("Coke te");
+        } else {
+            System.out.printf("not ofund");
+        }
 
 
-
-}
+    } //main
+} //class

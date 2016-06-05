@@ -1,7 +1,11 @@
 package enum_practice;
 
 public enum SoftDrink{
-    COKE("Coke", 75), PEPSI("Pepsi", 75), SODA("Soda", 90), LIME("Lime", 50), THUMPS_UP("India",40);
+    COKE("Coke", 75),
+    PEPSI("Pepsi", 75),
+    SODA("Soda", 90),
+    LIME("Lime", 50),
+    THUMPS_UP("India",40);
 
     // Java Enum can have member variables
     private String title;

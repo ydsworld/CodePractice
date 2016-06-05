@@ -22,7 +22,7 @@ public class RegExpTest_1 {
         list.add("#item5");
 
         ArrayList<String> list1 = new ArrayList<String>();
-        list1.add("#item1");
+        list1.add("item1");
         list1.add("item2");
         list1.add("#item3");
         list1.add("item4");

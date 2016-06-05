@@ -12,7 +12,7 @@ public class StringBuilderPractice {
 //        sb.append("/ect/sof1");
         String str = sb.toString();
        if (StringUtils.isEmpty(str)){
-           System.out.println("enoty");
+           System.out.println("empty");
        }
     }
 }

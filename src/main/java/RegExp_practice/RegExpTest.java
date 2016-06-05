@@ -16,18 +16,18 @@ public class RegExpTest {
 //         String test = "/etc/somethig";
 //         System.out.println(test.matches(re1+re2));
 
-         String txt="$/str2/soemt/somethig/etc/e";
+         String txt="/etc/design/somethig/etc/e";
 
          String rex1=".*?";	// Non-greedy match on filler
-         String rex2="(^\\/str1\\/|^\\/str22\\/|$)";	// Word 1
+         String rex2 ="(^\\/content\\/|^\\/etc\\/design\\/)";
 
          Pattern pattern = Pattern.compile(rex1+rex2,Pattern.CASE_INSENSITIVE | Pattern.DOTALL);
          Matcher m = pattern.matcher(txt);
-         if (!m.find())
+         if (m.find())
          {
-             System.out.println("not found" + m.group(1));
+             System.out.println("found : " + m.group(1));
          } else {
-             System.out.print("found");
+             System.out.print("not found");
          }
  } //main
 
