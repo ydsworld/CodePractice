@@ -4,11 +4,10 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
-<<<<<<< HEAD
-=======
+
 import java.util.ArrayList;
 import java.util.List;
->>>>>>> aca83f468c23adae1abc3babef92681dff05bf9a
+
 
 /**
  Your program should accept a path to a file as its first argument. The file contains multiple lines.
@@ -20,13 +19,13 @@ public class LongestLines {
         File file = new File(args[0]);
         BufferedReader buffer = new BufferedReader(new FileReader(file));
         String line;
-<<<<<<< HEAD
+
         while ((line = buffer.readLine()) != null){
 
         }
 
-    } //main
-=======
+
+
         int firstline=0, noOfLongestLines=0;
 
         List<String> lines = new ArrayList<>();
@@ -64,5 +63,5 @@ public class LongestLines {
         }
         return list;
     }
->>>>>>> aca83f468c23adae1abc3babef92681dff05bf9a
+
 }

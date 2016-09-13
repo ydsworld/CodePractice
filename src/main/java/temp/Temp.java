@@ -21,5 +21,17 @@ public class Temp {
 			System.out.println("Temp.main" + i) ;
 		}
 
+		StringBuilder sb = new StringBuilder();
+		for (int i = 0; i < arr.length; i++) {
+			sb.append(arr[i]);
+			if(i<arr.length-1){
+				System.out.println(i + " -" + arr.length);
+				sb.append(",");
+				System.out.println(i + " " + arr.length);
+			}
+		}
+
+		System.out.println(sb.toString());
+
 	} //main
 } //class

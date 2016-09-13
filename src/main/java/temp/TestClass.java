@@ -10,6 +10,7 @@ public class TestClass {
         User user = new User();
         user.setUsername("JohnSmith");
 
+
         System.out.println("User name: " + user.getUsername());
     }
 }
