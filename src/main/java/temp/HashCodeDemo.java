@@ -1,8 +1,6 @@
 package temp;
 
-/**
- * Created by AK on 9/1/16.
- */
+
 public class HashCodeDemo {
     public static void main(String[] args){
 
