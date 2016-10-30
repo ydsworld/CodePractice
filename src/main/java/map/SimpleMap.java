@@ -1,9 +1,6 @@
 package map;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class SimpleMap {
  public static void main(String[] args) {
@@ -15,7 +12,7 @@ public class SimpleMap {
      studentGrades.put("Alan", "A");
      studentGrades.put("Becca", "A-");
      studentGrades.put("Sheila", "B+");
-     
+
      //find element using key
     // System.out.println("Becca's Marks:: "+studentGrades.get("Becca"));
      
@@ -41,12 +38,30 @@ public class SimpleMap {
     //	 System.out.println(key + "::" + studentMarks.get(key));
      }
 
+     int index =1;
+     for(Map.Entry<String, Integer> entry : studentMarks.entrySet())
+     {
+         String key=entry.getKey();
+         int val=entry.getValue();
+         System.out.println(index + " " + key + " "  + val);
+         index++;
+         //your code block
+
+     }
 
      //putting Values of Map to Arrarylist
      List<String> al = new ArrayList<>(studentGrades.values());
      for(String str: al){
-         System.out.println(str);
+        // System.out.println(str);
      }
+
+
+     Map<String , Object> map = new HashMap<String, Object>();
+     map.put("4343",0);
+
+  //   System.out.println(map.get("4343"));
+
+
  }
 
 }

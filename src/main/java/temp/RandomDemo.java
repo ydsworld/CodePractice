@@ -3,9 +3,6 @@ package temp;
 import java.util.HashSet;
 import java.util.Set;
 
-/**
- * Created by AK on 8/31/16.
- */
 public class RandomDemo {
     public static void main(String[] args) {
         //int i = (int) (Math.random() * 101);
