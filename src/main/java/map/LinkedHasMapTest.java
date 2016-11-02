@@ -14,9 +14,11 @@ public class LinkedHasMapTest {
         lhm.put("one", "This is first element");
         lhm.put("two", "This is second element");
         lhm.put("four", "Element inserted at 3rd position");
-        Set<String> keys = lhm.keySet();
+        System.out.println("size " + lhm.size());
+
+       // Set<String> keys = lhm.keySet();
         int index=1;
-        for(String k:keys){
+        for(String k:lhm.keySet()){
             System.out.println(index + " " + k+" -- "+lhm.get(k));
             index++;
         }

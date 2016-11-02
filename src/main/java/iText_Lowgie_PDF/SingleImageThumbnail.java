@@ -1,6 +1,9 @@
 package iText_Lowgie_PDF;
 
-import com.lowagie.text.*;
+import com.lowagie.text.Document;
+import com.lowagie.text.Image;
+import com.lowagie.text.Phrase;
+import com.lowagie.text.Rectangle;
 import com.lowagie.text.pdf.PdfPCell;
 import com.lowagie.text.pdf.PdfPTable;
 import com.lowagie.text.pdf.PdfWriter;
@@ -19,37 +22,19 @@ import java.util.List;
 /**
  * Created by AK on 10/28/16.
  */
-public class ImageThumbnail {
+public class SingleImageThumbnail {
 
     private static final Logger COMMON_LOGGER = LoggerFactory.getLogger(CommonLogger.class);
 
     public static void main(String[] arg) {
         try {
 
-//
-            //http://ec2-52-25-88-167.us-west-2.compute.amazonaws.com:4503/content/victozapro/en/clinical-benefits.html
-            org.jsoup.nodes.Document html = Jsoup.connect("http://ec2-52-25-88-167.us-west-2.compute.amazonaws.com:4503/content/tresiba/en/about-tresiba/why-tresiba.html").get();
-            String root = "http://ec2-52-25-88-167.us-west-2.compute.amazonaws.com:4503";
-            Elements elements = html.getElementsByTag("img");
+String server = "http://ec2-52-25-88-167.us-west-2.compute.amazonaws.com:4503";  // content/tresiba/en/about-tresiba/why-tresiba.html
+
             List<String> list = new ArrayList<>();
-            String imgSrc;
-            int index = 0;
-            for (Element e : elements) {
-                imgSrc = e.attr("src");
-
-
-                if (!list.contains(root + imgSrc) && !StringUtils.isEmpty(imgSrc)) {
-
-                        list.add(root + imgSrc);
-
-
-                    index++;
-                }
-
-
-
-            }
-
+            list.add(server + "/content/dam/novonordisk/victozapro/clinicalbenefits/images/victozapro_clinical_benefits_topmarquee_desktop.jpg");
+            list.add(server + "/content/dam/novonordisk/victozapro/clinicalbenefits/images/common-adverse-reactions-table-01.png");
+            list.add(server + "/content/dam/novonordisk/victozapro/clinicalbenefits/images/victozapro_clinicalbenefits_chart_52weeks.png");
 
             Document document = new Document();
             PdfWriter.getInstance(document, new FileOutputStream("sample1.pdf"));
@@ -93,19 +78,20 @@ public class ImageThumbnail {
         }
     }
 
-   private static void calcAbsolue(Image img, float height, float width,PdfPCell cell){
-       cell.setPaddingLeft(30);
-       if (height >= 800 || width >= 1400) {
-           img.scaleAbsolute((width * (float) 0.2), (height * (float) 0.2));
-       } else if (height >= 400 || width >= 900) {
-           img.scaleAbsolute((width * (float) 0.3), (height * (float) 0.3));
-       } else if (height >= 200 || width >= 200) {
-           img.scaleAbsolute((width * (float) 0.5), (height * (float) 0.5));
-       } else if (height <= 50 || width <= 50) {
-           img.scaleAbsolute((width * (float) 1.5), (height * (float) 1.5));
-       } else {
-           img.scaleAbsolute((width * (float) 1.0), (height * (float) 1.0));
-       }
+    private static void calcAbsolue(Image img, float height, float width,PdfPCell cell){
+        cell.setPaddingLeft(30);
+        if (height >= 900 || width >= 1500){
+            img.scaleAbsolute((width * (float) 0.2), (height * (float) 0.2));
+            cell.setPaddingLeft(5);
+        } else if (height >= 600 || width >= 900) {
+                img.scaleAbsolute((width * (float) 0.4), (height * (float) 0.4));
+                cell.setPaddingLeft(30);
+            } else if (height >= 200 || width >= 200) {
+                img.scaleAbsolute((width * (float) 0.5), (height * (float) 0.5));
+            } else if (height <= 50 || width <= 50) {
+                img.scaleAbsolute((width * (float) 1.5), (height * (float) 1.5));
+            } else {
+                img.scaleAbsolute((width * (float) 1.0), (height * (float) 1.0));
+            }
     }
-
 }
