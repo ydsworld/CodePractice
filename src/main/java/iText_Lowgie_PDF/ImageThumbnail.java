@@ -28,15 +28,16 @@ public class ImageThumbnail {
 
 //
             //http://ec2-52-25-88-167.us-west-2.compute.amazonaws.com:4503/content/victozapro/en/clinical-benefits.html
-            org.jsoup.nodes.Document html = Jsoup.connect("http://ec2-52-25-88-167.us-west-2.compute.amazonaws.com:4503/content/tresiba/en/about-tresiba/why-tresiba.html").get();
+            org.jsoup.nodes.Document html = Jsoup.connect("http://ec2-52-25-88-167.us-west-2.compute.amazonaws.com:4503/content/victozapro/en/home.html").get();
             String root = "http://ec2-52-25-88-167.us-west-2.compute.amazonaws.com:4503";
             Elements elements = html.getElementsByTag("img");
             List<String> list = new ArrayList<>();
             String imgSrc;
+            String altText;
             int index = 0;
             for (Element e : elements) {
                 imgSrc = e.attr("src");
-
+                // altText = e.attr("alt"); Alternate Text.
 
                 if (!list.contains(root + imgSrc) && !StringUtils.isEmpty(imgSrc)) {
 
