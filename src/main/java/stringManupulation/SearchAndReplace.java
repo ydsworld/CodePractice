@@ -20,5 +20,19 @@ public class SearchAndReplace {
                 System.out.println(str[i]);
             }
         }
+
+        String r = "aer2@gmail.cm";
+        String r1 = "343433";
+
+        String [] str1 = {r,r1};
+
+        for (int i = 0; i < str1.length; i++) {
+            if(StringUtils.isNotEmpty(str1[i])) {
+                //str[i] = str[i].replaceAll("[^a-zA-Z0-9]", "-");
+                System.out.println(str1[i]);
+            }
+        }
+
+
     }
 }
