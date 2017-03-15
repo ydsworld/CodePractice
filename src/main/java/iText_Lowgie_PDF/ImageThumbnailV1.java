@@ -31,13 +31,17 @@ public class ImageThumbnailV1 {
 
 
 
-            org.jsoup.nodes.Document html = Jsoup.connect("http://ec2-52-25-88-167.us-west-2.compute.amazonaws.com:4503/content/tresiba/en/about-tresiba/why-tresiba.html").get();
+            org.jsoup.nodes.Document html = Jsoup.connect("http://ec2-52-25-88-167.us-west-2.compute.amazonaws.com:4503/content/victoza/en/get-started-using-victoza-.html").get();
             String root = "http://ec2-52-25-88-167.us-west-2.compute.amazonaws.com:4503";
-            Elements elements = html.getElementsByTag("img");
+            Elements elements =
+            html.getElementsByClass("hero");
+
             List<String> list = new ArrayList<>();
-String imgSrc;
+            String imgSrc;
+
             for(Element e:elements){
-                imgSrc = e.attr("src");
+                //imgSrc = e.attr("src");
+                imgSrc= e.attr("style");
 
                 if (!list.contains(root + imgSrc) && !StringUtils.isEmpty(imgSrc)){
                     list.add(root + imgSrc);
@@ -51,7 +55,7 @@ String imgSrc;
 //            list.add("http://ec2-52-25-88-167.us-west-2.compute.amazonaws.com:4503/content/dam/diabetes-patient/tresiba/General/blue-tab-C4C.jpg");
 
             Document document = new Document();
-            PdfWriter.getInstance(document,new FileOutputStream("sample1.pdf"));
+            PdfWriter.getInstance(document,new FileOutputStream("sample7.pdf"));
 
             document.open();
             System.out.println(document.getPageSize());

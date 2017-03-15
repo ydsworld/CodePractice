@@ -28,15 +28,18 @@ public class ImageThumbnail {
 
 //
             //http://ec2-52-25-88-167.us-west-2.compute.amazonaws.com:4503/content/victozapro/en/clinical-benefits.html
-            org.jsoup.nodes.Document html = Jsoup.connect("http://ec2-52-25-88-167.us-west-2.compute.amazonaws.com:4503/content/victozapro/en/home.html").get();
+            org.jsoup.nodes.Document html = Jsoup.connect("http://ec2-52-25-88-167.us-west-2.compute.amazonaws.com:4503/content/victoza/en/get-started-using-victoza-.html").get();
             String root = "http://ec2-52-25-88-167.us-west-2.compute.amazonaws.com:4503";
             Elements elements = html.getElementsByTag("img");
+            //Elements elements = html.body().select("img");
+
             List<String> list = new ArrayList<>();
             String imgSrc;
             String altText;
             int index = 0;
             for (Element e : elements) {
                 imgSrc = e.attr("src");
+
                 // altText = e.attr("alt"); Alternate Text.
 
                 if (!list.contains(root + imgSrc) && !StringUtils.isEmpty(imgSrc)) {
@@ -53,7 +56,7 @@ public class ImageThumbnail {
 
 
             Document document = new Document();
-            PdfWriter.getInstance(document, new FileOutputStream("sample1.pdf"));
+            PdfWriter.getInstance(document, new FileOutputStream("sample2.pdf"));
 
             document.open();
             PdfPTable table = new PdfPTable(1);
