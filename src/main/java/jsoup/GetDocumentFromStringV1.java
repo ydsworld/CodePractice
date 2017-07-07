@@ -21,7 +21,7 @@ public class GetDocumentFromStringV1 {
         //Document html = Jsoup.parse(htmlString);
 
         //load from URL
-        Document html = Jsoup.connect("https://www.tresiba.com/about-tresiba/why-tresiba.html").get();
+        Document html = Jsoup.connect("https://www.anysite.com.com/about-site/why-site.html").get();
 
       //  Elements resultLinks =   //html.getElementsByTag("h1");
 

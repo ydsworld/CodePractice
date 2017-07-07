@@ -27,18 +27,17 @@ public class BackgroundImage {
     public static void main(String[] arg){
         try{
             //
-            org.jsoup.nodes.Document html = Jsoup.connect("http://ec2-52-25-88-167.us-west-2.compute.amazonaws.com:4503/content/victoza/en/get-started-using-victoza-.html").get();
+            org.jsoup.nodes.Document html = Jsoup.connect("https://www.victoza.com/get-started-using-victoza-.html").get();
             String root = "http://ec2-52-25-88-167.us-west-2.compute.amazonaws.com:4503";
 
-
-            // String html = "<html><head></head><body><div class=\"post_video\" style=\"background-image:url(http://img.youtube.com/vi/JFf3uazyXco/2.jpg);\"></body></html>";
-
-                 //   Document doc = Jsoup.parse( html );
-                    Elements elements = html.getElementsByClass("hero");
+                    Elements elements = html.body().select("*[style*='background-image']");
 
                     for( Element e : elements ) {
                         String attr = e.attr("style");
-                        System.out.println( attr.substring( attr.indexOf("/"), attr.indexOf(")") ) );
+                        System.out.println("attr " + attr);
+                        System.out.println( attr.substring( attr.indexOf("/"), attr.indexOf(")")-1 ) );
+                        System.out.println("back " + e.attr("background-image"));
+                        System.out.println( attr.substring( attr.lastIndexOf("/")+1 ,attr.indexOf(")")-1) );
                     }
 
             System.out.println("Done");

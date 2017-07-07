@@ -28,9 +28,9 @@ public class ImageThumbnail {
 
 //
             //http://ec2-52-25-88-167.us-west-2.compute.amazonaws.com:4503/content/victozapro/en/clinical-benefits.html
-            org.jsoup.nodes.Document html = Jsoup.connect("http://ec2-52-25-88-167.us-west-2.compute.amazonaws.com:4503/content/victoza/en/get-started-using-victoza-.html").get();
+            org.jsoup.nodes.Document html = Jsoup.connect("http://ec2-52-25-88-167.us-west-2.compute.amazonaws.com:4503/content/victoza/en/home.html").get();
             String root = "http://ec2-52-25-88-167.us-west-2.compute.amazonaws.com:4503";
-            Elements elements = html.getElementsByTag("img");
+            Elements elements = html.body().select(".hidden-xs img");
             //Elements elements = html.body().select("img");
 
             List<String> list = new ArrayList<>();
