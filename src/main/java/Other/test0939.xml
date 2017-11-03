@@ -1,0 +1,555 @@
+17.10.2017 08:40:17.623 *INFO* [10.39.68.48 [1508247617431] POST /content/saxendacare/en/registration.registerOpatient.html HTTP/1.1] org.apache.cxf.services.IPlatformServiceService.IPlatformServicePort.IPlatformService Outbound Message --------------------------- ID: 972 Address: http://api-saxendacare.nnittest.com/NovoObesityPlatform.svc Encoding: UTF-8 Http-Method: POST Content-Type: text/xml Headers: {Accept=[*/*], SOAPAction=["http://tempuri.org/IPlatformService/CreateUser"]} Payload:
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Header>
+        <OAuth xmlns="Token">
+            Key:cwBhAHgAZQBuAGQAYQA6AFEAUgBEAFMANQBEAG4AVQBmAHoAQwAzAEUAZQB3AFcAUABXAG8AUABhAEEAPQA9AA==
+        </OAuth>
+    </soap:Header>
+    <soap:Body>
+        <CreateUser xmlns="http://tempuri.org/"
+                    xmlns:ns2="http://schemas.datacontract.org/2004/07/Novo.Obesity.Entities"
+                    xmlns:ns3="http://schemas.microsoft.com/2003/10/Serialization/"
+                    xmlns:ns4="http://schemas.datacontract.org/2004/07/System.ServiceModel"
+                    xmlns:ns5="http://schemas.datacontract.org/2004/07/System">
+            <userDetails>
+                <ns2:ActivityCode>000870102</ns2:ActivityCode>
+                <ns2:Address1>1001 N Clovis St</ns2:Address1>
+                <ns2:Address2></ns2:Address2>
+                <ns2:BirthDate>1958-01-02T00:00:00.000</ns2:BirthDate>
+                <ns2:CardNumber xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                <ns2:City>Clovis</ns2:City>
+                <ns2:EmailAddress>xptest10170939@test.com</ns2:EmailAddress>
+                <ns2:FirstName>xptest</ns2:FirstName>
+                <ns2:GuardianEmail xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                <ns2:GuardianFirstName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                <ns2:GuardianLastName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                <ns2:IndividualPreferences xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                <ns2:Language xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                <ns2:LastName>xptest</ns2:LastName>
+                <ns2:MRIModuleId xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                <ns2:MRIModuleName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                <ns2:MRIModuleStatus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                <ns2:MRISelfAssessmentStatus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                <ns2:MiddleName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                <ns2:MobilePhone xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                <ns2:OptIn>true</ns2:OptIn>
+                <ns2:Password>Test1234</ns2:Password>
+                <ns2:PatientBirthDate xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                <ns2:PatientFirstName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                <ns2:PatientLastName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                <ns2:PatientMiddleName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                <ns2:Permission_to_call_yn>true</ns2:Permission_to_call_yn>
+                <ns2:PhoneCallTime>morning</ns2:PhoneCallTime>
+                <ns2:PhoneNumber xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                <ns2:PrescribeToSaxenda>true</ns2:PrescribeToSaxenda>
+                <ns2:RegisterChoice>carecc</ns2:RegisterChoice>
+                <ns2:Registration_source>SAXENDACARE</ns2:Registration_source>
+                <ns2:Reminders>false</ns2:Reminders>
+                <ns2:SecurityAnswer>novo</ns2:SecurityAnswer>
+                <ns2:SecurityQuestionId>childhoodNickName</ns2:SecurityQuestionId>
+                <ns2:Startdate xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                <ns2:Starterkit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                <ns2:State>DE</ns2:State>
+                <ns2:SuperPalActivationCode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                <ns2:SurveyDetail xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                <ns2:TypeOfDiabetes>OTHER</ns2:TypeOfDiabetes>
+                <ns2:UserEmail>xptest10170939@test.com</ns2:UserEmail>
+                <ns2:WebKeyId xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                <ns2:YearDiagnosed xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                <ns2:ZipCode>12344</ns2:ZipCode>
+            </userDetails>
+        </CreateUser>
+    </soap:Body>
+</soap:Envelope> --------------------------------------
+        17.10.2017 08:40:18.440 *INFO* [10.39.68.48 [1508247617431] POST /content/saxendacare/en/registration.registerOpatient.html HTTP/1.1] org.apache.cxf.services.IPlatformServiceService.IPlatformServicePort.IPlatformService Inbound Message ---------------------------- ID: 972 Response-Code: 200 Encoding: UTF-8 Content-Type: text/xml; charset=utf-8 Headers: {Content-Length=[1633], content-type=[text/xml; charset=utf-8], Date=[Tue, 17 Oct 2017 13:40:17 GMT], Server=[Microsoft-IIS/8.5], X-Powered-By=[ASP.NET]}{Content-Length=[1633], content-type=[text/xml; charset=utf-8], Date=[Tue, 17 Oct 2017 13:40:17 GMT], Server=[Microsoft-IIS/8.5], X-Powered-By=[ASP.NET]} Payload: <s:Envelope
+xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Header>
+    <Token xmlns="NovoSSO">
+        gAAAABudKlar4G-76_4Lt5QPMG-eIN6tMcSL8azhQsNdXaAhg3RHJRPULG_bjMuDl2RCI6EGUbMycspSKWZrptL0b40xyXpEu2-INnC7D_bpVP03oWcF5hKbPYHmxUfu_EcnB5W6QSS1j4AZ8rrPgM79--uJPDMkKioiU1KQvBb1iybC5AAAAIAAAAAzLdEMThFZTWrUrd5uhBw4UDGxJhBs2bxOdr8B37_v2Io-ZKvyH5ZJ04gdcy_r9yy8WEFZTixEXxvr8uTS7F3ySFKtMCFLCNnnR2-A6CuWGOntVER0LNTyoO6Oc-i1kfT8opS5z5u8Gbh2zADTFG79NILDy_VhXvIWAU57My1xFRscobVyIIDXOqGdgWWYYoWrzwNJKQNHw1lNQskIibLfWLLenWucMsRTVNXZu1n05lNtKEr05unqf8WUh0QUVdaabJbZJZqvsD4akD9U0ukokwCQj0Cy5Xm7cSHaLaNTzA
+    </Token>
+</s:Header>
+<s:Body>
+    <CreateUserResponse xmlns="http://tempuri.org/">
+        <CreateUserResult xmlns:a="http://schemas.datacontract.org/2004/07/Novo.Obesity.Entities"
+                          xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+            <a:CreatedDate>2017-10-17T08:40:16.912361-05:00</a:CreatedDate>
+            <a:DosingReminder>false</a:DosingReminder>
+            <a:DosingStartDate>0001-01-01T00:00:00</a:DosingStartDate>
+            <a:FirstName>xptest</a:FirstName>
+            <a:HasCoPayCard>false</a:HasCoPayCard>
+            <a:HasStarterKit>false</a:HasStarterKit>
+            <a:LastLoginDate>2017-10-17T08:40:17.0998982-05:00</a:LastLoginDate>
+            <a:LastName>xptest</a:LastName>
+            <a:LastUpdatedDate>0001-01-01T00:00:00</a:LastUpdatedDate>
+            <a:MckessonResponse>{"Status":"No Mckession call","ResponseCode":"E003","ResponseMessage":"Either user is
+                already enrolled or user did not acknowledge.","CouponCode":null}
+            </a:MckessonResponse>
+            <a:MiddleName i:nil="true"/>
+            <a:SecurityQuestionId>1</a:SecurityQuestionId>
+            <a:UserEmail>xptest10170939@test.com</a:UserEmail>
+            <a:UserId>704</a:UserId>
+        </CreateUserResult>
+    </CreateUserResponse>
+</s:Body>
+</s:Envelope> --------------------------------------
+        17.10.2017 08:41:02.826 *INFO* [10.39.68.48 [1508247662661] POST /content/saxendacare/en/login.loginSiteO.html HTTP/1.1] org.apache.cxf.services.IPlatformServiceService.IPlatformServicePort.IPlatformService Outbound Message --------------------------- ID: 973 Address: http://api-saxendacare.nnittest.com/NovoObesityPlatform.svc Encoding: UTF-8 Http-Method: POST Content-Type: text/xml Headers: {Accept=[*/*], SOAPAction=["http://tempuri.org/IPlatformService/SignInWithSoftLogin"]} Payload: <soap:Envelope
+xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+<soap:Header>
+    <OAuth xmlns="Token">Key:cwBhAHgAZQBuAGQAYQA6AFEAUgBEAFMANQBEAG4AVQBmAHoAQwAzAEUAZQB3AFcAUABXAG8AUABhAEEAPQA9AA==
+    </OAuth>
+</soap:Header>
+<soap:Body>
+    <SignInWithSoftLogin xmlns="http://tempuri.org/"
+                         xmlns:ns2="http://schemas.datacontract.org/2004/07/Novo.Obesity.Entities"
+                         xmlns:ns3="http://schemas.microsoft.com/2003/10/Serialization/"
+                         xmlns:ns4="http://schemas.datacontract.org/2004/07/System.ServiceModel"
+                         xmlns:ns5="http://schemas.datacontract.org/2004/07/System">
+        <userName>xptest10170939@test.com</userName>
+        <password>xxx</password>xxx
+        <softLoginToken xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+    </SignInWithSoftLogin>
+</soap:Body>
+</soap:Envelope> --------------------------------------
+        17.10.2017 08:41:03.006 *INFO* [10.39.68.48 [1508247662661] POST /content/saxendacare/en/login.loginSiteO.html HTTP/1.1] org.apache.cxf.services.IPlatformServiceService.IPlatformServicePort.IPlatformService Inbound Message ---------------------------- ID: 973 Response-Code: 200 Encoding: UTF-8 Content-Type: text/xml; charset=utf-8 Headers: {Content-Length=[778], content-type=[text/xml; charset=utf-8], Date=[Tue, 17 Oct 2017 13:41:02 GMT], Server=[Microsoft-IIS/8.5], X-Powered-By=[ASP.NET]}{Content-Length=[778], content-type=[text/xml; charset=utf-8], Date=[Tue, 17 Oct 2017 13:41:02 GMT], Server=[Microsoft-IIS/8.5], X-Powered-By=[ASP.NET]} Payload: <s:Envelope
+xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Header>
+    <Token xmlns="NovoSSO">
+        gAAAAEvOGksosIdS7h1GpM4FfALdaGguZq4v1vy3SbrcwP-u6FBd9yACa4yC4pgAD6BphNoPUTnLvzUuWnO7fuhq6_kpwe0KGb85YPncdXO69bJlNc28GU77NL5SH2nziwGwZaSrA1FRMI1V0rZ3HegTc-wJW1DsekGJmssHGgTjDslh5AAAAIAAAAAIb5Gi8njiythqRnNqHg_d-dzfCiDQsC8ecbLvUxnmC4661C3zlTBxcfa2rl3GpBUJV_phG7pXc-YtxSzOGflcBa8LHnlu-4ssX5saAH9zum4M_YlPQkHolOvbkD2zr0_xzPRD_O5m3OthKKFxNf-xA6KtzwOIn6yZCx4EmOU99H5XuJ1WZkCl1qgYx0BExrqQ5afw2l2C1w7HF2pM-vQQelZsSpLQSwlLZZAFmK5liLkxR12SAtuDWnGyAMlN4HkM8pjXPAKNvV2rhA1YiCY2_kio7cGW_5uRDZ_Pi6Wdzw
+    </Token>
+</s:Header>
+<s:Body>
+    <SignInWithSoftLoginResponse xmlns="http://tempuri.org/">
+        <SignInWithSoftLoginResult>true</SignInWithSoftLoginResult>
+    </SignInWithSoftLoginResponse>
+</s:Body>
+</s:Envelope> --------------------------------------
+        17.10.2017 08:41:03.038 *INFO* [10.39.68.48 [1508247662661] POST /content/saxendacare/en/login.loginSiteO.html HTTP/1.1] org.apache.cxf.services.IPlatformServiceService.IPlatformServicePort.IPlatformService Outbound Message --------------------------- ID: 974 Address: http://api-saxendacare.nnittest.com/NovoObesityPlatform.svc Encoding: UTF-8 Http-Method: POST Content-Type: text/xml Headers: {Accept=[*/*], SOAPAction=["http://tempuri.org/IPlatformService/GetUserByToken"]} Payload: <soap:Envelope
+xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+<soap:Header>
+    <OAuth xmlns="Token">Key:cwBhAHgAZQBuAGQAYQA6AFEAUgBEAFMANQBEAG4AVQBmAHoAQwAzAEUAZQB3AFcAUABXAG8AUABhAEEAPQA9AA==
+    </OAuth>
+</soap:Header>
+<soap:Body>
+    <GetUserByToken xmlns="http://tempuri.org/"
+                    xmlns:ns2="http://schemas.datacontract.org/2004/07/Novo.Obesity.Entities"
+                    xmlns:ns3="http://schemas.microsoft.com/2003/10/Serialization/"
+                    xmlns:ns4="http://schemas.datacontract.org/2004/07/System.ServiceModel"
+                    xmlns:ns5="http://schemas.datacontract.org/2004/07/System">
+        <token>
+            gAAAAEvOGksosIdS7h1GpM4FfALdaGguZq4v1vy3SbrcwP-u6FBd9yACa4yC4pgAD6BphNoPUTnLvzUuWnO7fuhq6_kpwe0KGb85YPncdXO69bJlNc28GU77NL5SH2nziwGwZaSrA1FRMI1V0rZ3HegTc-wJW1DsekGJmssHGgTjDslh5AAAAIAAAAAIb5Gi8njiythqRnNqHg_d-dzfCiDQsC8ecbLvUxnmC4661C3zlTBxcfa2rl3GpBUJV_phG7pXc-YtxSzOGflcBa8LHnlu-4ssX5saAH9zum4M_YlPQkHolOvbkD2zr0_xzPRD_O5m3OthKKFxNf-xA6KtzwOIn6yZCx4EmOU99H5XuJ1WZkCl1qgYx0BExrqQ5afw2l2C1w7HF2pM-vQQelZsSpLQSwlLZZAFmK5liLkxR12SAtuDWnGyAMlN4HkM8pjXPAKNvV2rhA1YiCY2_kio7cGW_5uRDZ_Pi6Wdzw
+        </token>
+    </GetUserByToken>
+</soap:Body>
+</soap:Envelope> --------------------------------------
+        17.10.2017 08:41:03.083 *INFO* [10.39.68.48 [1508247662661] POST /content/saxendacare/en/login.loginSiteO.html HTTP/1.1] org.apache.cxf.services.IPlatformServiceService.IPlatformServicePort.IPlatformService Inbound Message ---------------------------- ID: 974 Response-Code: 200 Encoding: UTF-8 Content-Type: text/xml; charset=utf-8 Headers: {Content-Length=[928], content-type=[text/xml; charset=utf-8], Date=[Tue, 17 Oct 2017 13:41:02 GMT], Server=[Microsoft-IIS/8.5], X-Powered-By=[ASP.NET]}{Content-Length=[928], content-type=[text/xml; charset=utf-8], Date=[Tue, 17 Oct 2017 13:41:02 GMT], Server=[Microsoft-IIS/8.5], X-Powered-By=[ASP.NET]} Payload: <s:Envelope
+xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Body>
+    <GetUserByTokenResponse xmlns="http://tempuri.org/">
+        <GetUserByTokenResult xmlns:a="http://schemas.datacontract.org/2004/07/Novo.Obesity.Entities"
+                              xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+            <a:CreatedDate>2017-10-17T08:40:16.912361</a:CreatedDate>
+            <a:DosingReminder>false</a:DosingReminder>
+            <a:DosingStartDate>0001-01-01T00:00:00</a:DosingStartDate>
+            <a:FirstName>xptest</a:FirstName>
+            <a:HasCoPayCard>false</a:HasCoPayCard>
+            <a:HasStarterKit>false</a:HasStarterKit>
+            <a:LastLoginDate>2017-10-17T08:41:02.1789609</a:LastLoginDate>
+            <a:LastName>xptest</a:LastName>
+            <a:LastUpdatedDate>0001-01-01T00:00:00</a:LastUpdatedDate>
+            <a:MckessonResponse/>
+            <a:MiddleName i:nil="true"/>
+            <a:SecurityQuestionId>1</a:SecurityQuestionId>
+            <a:UserEmail>xptest10170939@test.com</a:UserEmail>
+            <a:UserId>704</a:UserId>
+        </GetUserByTokenResult>
+    </GetUserByTokenResponse>
+</s:Body>
+</s:Envelope> --------------------------------------
+        17.10.2017 08:41:03.111 *INFO* [10.39.68.48 [1508247662661] POST /content/saxendacare/en/login.loginSiteO.html HTTP/1.1] org.apache.cxf.services.IPlatformServiceService.IPlatformServicePort.IPlatformService Outbound Message --------------------------- ID: 975 Address: http://api-saxendacare.nnittest.com/NovoObesityPlatform.svc Encoding: UTF-8 Http-Method: POST Content-Type: text/xml Headers: {Accept=[*/*], SOAPAction=["http://tempuri.org/IPlatformService/GetUserValidicByUserId"]} Payload: <soap:Envelope
+xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+<soap:Header>
+    <OAuth xmlns="Token">Key:cwBhAHgAZQBuAGQAYQA6AFEAUgBEAFMANQBEAG4AVQBmAHoAQwAzAEUAZQB3AFcAUABXAG8AUABhAEEAPQA9AA==
+    </OAuth>
+</soap:Header>
+<soap:Body>
+    <GetUserValidicByUserId xmlns="http://tempuri.org/"
+                            xmlns:ns2="http://schemas.datacontract.org/2004/07/Novo.Obesity.Entities"
+                            xmlns:ns3="http://schemas.microsoft.com/2003/10/Serialization/"
+                            xmlns:ns4="http://schemas.datacontract.org/2004/07/System.ServiceModel"
+                            xmlns:ns5="http://schemas.datacontract.org/2004/07/System">
+        <userId>704</userId>
+    </GetUserValidicByUserId>
+</soap:Body>
+</soap:Envelope> --------------------------------------
+        17.10.2017 08:41:03.132 *INFO* [10.39.68.48 [1508247662661] POST /content/saxendacare/en/login.loginSiteO.html HTTP/1.1] org.apache.cxf.services.IPlatformServiceService.IPlatformServicePort.IPlatformService Inbound Message ---------------------------- ID: 975 Response-Code: 500 Encoding: UTF-8 Content-Type: text/xml; charset=utf-8 Headers: {Content-Length=[713], content-type=[text/xml; charset=utf-8], Date=[Tue, 17 Oct 2017 13:41:02 GMT], Server=[Microsoft-IIS/8.5], X-Powered-By=[ASP.NET]}{Content-Length=[713], content-type=[text/xml; charset=utf-8], Date=[Tue, 17 Oct 2017 13:41:02 GMT], Server=[Microsoft-IIS/8.5], X-Powered-By=[ASP.NET]} Payload: <s:Envelope
+xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Body>
+    <s:Fault>
+        <faultcode>s:Client</faultcode>
+        <faultstring xml:lang="en-US">{"ErrorMessage":"UserValidic does not exists.","ErrorDescription":"An error
+            occurred while GetUserValidicByUserId: UserValidic does not exists.","ErrorCode":110}
+        </faultstring>
+        <detail>
+            <ErrorDetails xmlns="http://schemas.datacontract.org/2004/07/Novo.Obesity.Entities"
+                          xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+                <ErrorCode>110</ErrorCode>
+                <ErrorDescription>An error occurred while GetUserValidicByUserId: UserValidic does not exists.
+                </ErrorDescription>
+                <ErrorMessage>UserValidic does not exists.</ErrorMessage>
+            </ErrorDetails>
+        </detail>
+    </s:Fault>
+</s:Body>
+</s:Envelope> --------------------------------------
+        17.10.2017 08:41:03.549 *INFO* [10.39.68.48 [1508247662661] POST /content/saxendacare/en/login.loginSiteO.html HTTP/1.1] org.apache.cxf.services.IPlatformServiceService.IPlatformServicePort.IPlatformService Outbound Message --------------------------- ID: 976 Address: http://api-saxendacare.nnittest.com/NovoObesityPlatform.svc Encoding: UTF-8 Http-Method: POST Content-Type: text/xml Headers: {Accept=[*/*], SOAPAction=["http://tempuri.org/IPlatformService/SyncUserValidicByUserId"]} Payload: <soap:Envelope
+xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+<soap:Header>
+    <OAuth xmlns="Token">Key:cwBhAHgAZQBuAGQAYQA6AFEAUgBEAFMANQBEAG4AVQBmAHoAQwAzAEUAZQB3AFcAUABXAG8AUABhAEEAPQA9AA==
+    </OAuth>
+</soap:Header>
+<soap:Body>
+    <SyncUserValidicByUserId xmlns="http://tempuri.org/"
+                             xmlns:ns2="http://schemas.datacontract.org/2004/07/Novo.Obesity.Entities"
+                             xmlns:ns3="http://schemas.microsoft.com/2003/10/Serialization/"
+                             xmlns:ns4="http://schemas.datacontract.org/2004/07/System.ServiceModel"
+                             xmlns:ns5="http://schemas.datacontract.org/2004/07/System">
+        <userValidic>
+            <ns2:UserId>704</ns2:UserId>
+            <ns2:ValidicAccessToken>6YVygQyCK-pYaKLssr4k</ns2:ValidicAccessToken>
+            <ns2:ValidicApplication></ns2:ValidicApplication>
+            <ns2:ValidicUserId>59e6086ffe35fd155133323f</ns2:ValidicUserId>
+        </userValidic>
+    </SyncUserValidicByUserId>
+</soap:Body>
+</soap:Envelope> --------------------------------------
+        17.10.2017 08:41:03.607 *INFO* [10.39.68.48 [1508247662661] POST /content/saxendacare/en/login.loginSiteO.html HTTP/1.1] org.apache.cxf.services.IPlatformServiceService.IPlatformServicePort.IPlatformService Inbound Message ---------------------------- ID: 976 Response-Code: 200 Encoding: UTF-8 Content-Type: text/xml; charset=utf-8 Headers: {Content-Length=[255], content-type=[text/xml; charset=utf-8], Date=[Tue, 17 Oct 2017 13:41:02 GMT], Server=[Microsoft-IIS/8.5], X-Powered-By=[ASP.NET]}{Content-Length=[255], content-type=[text/xml; charset=utf-8], Date=[Tue, 17 Oct 2017 13:41:02 GMT], Server=[Microsoft-IIS/8.5], X-Powered-By=[ASP.NET]} Payload: <s:Envelope
+xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Body>
+    <SyncUserValidicByUserIdResponse xmlns="http://tempuri.org/">
+        <SyncUserValidicByUserIdResult>704</SyncUserValidicByUserIdResult>
+    </SyncUserValidicByUserIdResponse>
+</s:Body>
+</s:Envelope> --------------------------------------
+        17.10.2017 08:41:03.825 *INFO* [10.39.68.48 [1508247663798] GET /content/saxendacare/en/home.html HTTP/1.1] org.apache.cxf.services.IPlatformServiceService.IPlatformServicePort.IPlatformService Outbound Message --------------------------- ID: 977 Address: http://api-saxendacare.nnittest.com/NovoObesityPlatform.svc Encoding: UTF-8 Http-Method: POST Content-Type: text/xml Headers: {Accept=[*/*], SOAPAction=["http://tempuri.org/IPlatformService/IsUserLoggedIn"]} Payload: <soap:Envelope
+xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+<soap:Header>
+    <OAuth xmlns="Token">Key:cwBhAHgAZQBuAGQAYQA6AFEAUgBEAFMANQBEAG4AVQBmAHoAQwAzAEUAZQB3AFcAUABXAG8AUABhAEEAPQA9AA==
+    </OAuth>
+</soap:Header>
+<soap:Body>
+    <IsUserLoggedIn xmlns="http://tempuri.org/"
+                    xmlns:ns2="http://schemas.datacontract.org/2004/07/Novo.Obesity.Entities"
+                    xmlns:ns3="http://schemas.microsoft.com/2003/10/Serialization/"
+                    xmlns:ns4="http://schemas.datacontract.org/2004/07/System.ServiceModel"
+                    xmlns:ns5="http://schemas.datacontract.org/2004/07/System">
+        <token>
+            gAAAAEvOGksosIdS7h1GpM4FfALdaGguZq4v1vy3SbrcwP-u6FBd9yACa4yC4pgAD6BphNoPUTnLvzUuWnO7fuhq6_kpwe0KGb85YPncdXO69bJlNc28GU77NL5SH2nziwGwZaSrA1FRMI1V0rZ3HegTc-wJW1DsekGJmssHGgTjDslh5AAAAIAAAAAIb5Gi8njiythqRnNqHg_d-dzfCiDQsC8ecbLvUxnmC4661C3zlTBxcfa2rl3GpBUJV_phG7pXc-YtxSzOGflcBa8LHnlu-4ssX5saAH9zum4M_YlPQkHolOvbkD2zr0_xzPRD_O5m3OthKKFxNf-xA6KtzwOIn6yZCx4EmOU99H5XuJ1WZkCl1qgYx0BExrqQ5afw2l2C1w7HF2pM-vQQelZsSpLQSwlLZZAFmK5liLkxR12SAtuDWnGyAMlN4HkM8pjXPAKNvV2rhA1YiCY2_kio7cGW_5uRDZ_Pi6Wdzw
+        </token>
+    </IsUserLoggedIn>
+</soap:Body>
+</soap:Envelope> --------------------------------------
+        17.10.2017 08:41:03.846 *INFO* [10.39.68.48 [1508247663798] GET /content/saxendacare/en/home.html HTTP/1.1] org.apache.cxf.services.IPlatformServiceService.IPlatformServicePort.IPlatformService Inbound Message ---------------------------- ID: 977 Response-Code: 200 Encoding: UTF-8 Content-Type: text/xml; charset=utf-8 Headers: {Content-Length=[220], content-type=[text/xml; charset=utf-8], Date=[Tue, 17 Oct 2017 13:41:02 GMT], Server=[Microsoft-IIS/8.5], X-Powered-By=[ASP.NET]}{Content-Length=[220], content-type=[text/xml; charset=utf-8], Date=[Tue, 17 Oct 2017 13:41:02 GMT], Server=[Microsoft-IIS/8.5], X-Powered-By=[ASP.NET]} Payload: <s:Envelope
+xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Body>
+    <IsUserLoggedInResponse xmlns="http://tempuri.org/">
+        <IsUserLoggedInResult>true</IsUserLoggedInResult>
+    </IsUserLoggedInResponse>
+</s:Body>
+</s:Envelope> --------------------------------------
+        17.10.2017 08:41:04.565 *INFO* [10.39.68.48 [1508247664542] POST /bin/saxendacare/loginverification HTTP/1.1] org.apache.cxf.services.IPlatformServiceService.IPlatformServicePort.IPlatformService Outbound Message --------------------------- ID: 978 Address: http://api-saxendacare.nnittest.com/NovoObesityPlatform.svc Encoding: UTF-8 Http-Method: POST Content-Type: text/xml Headers: {Accept=[*/*], SOAPAction=["http://tempuri.org/IPlatformService/IsUserLoggedIn"]} Payload: <soap:Envelope
+xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+<soap:Header>
+    <OAuth xmlns="Token">Key:cwBhAHgAZQBuAGQAYQA6AFEAUgBEAFMANQBEAG4AVQBmAHoAQwAzAEUAZQB3AFcAUABXAG8AUABhAEEAPQA9AA==
+    </OAuth>
+</soap:Header>
+<soap:Body>
+    <IsUserLoggedIn xmlns="http://tempuri.org/"
+                    xmlns:ns2="http://schemas.datacontract.org/2004/07/Novo.Obesity.Entities"
+                    xmlns:ns3="http://schemas.microsoft.com/2003/10/Serialization/"
+                    xmlns:ns4="http://schemas.datacontract.org/2004/07/System.ServiceModel"
+                    xmlns:ns5="http://schemas.datacontract.org/2004/07/System">
+        <token>
+            gAAAAEvOGksosIdS7h1GpM4FfALdaGguZq4v1vy3SbrcwP-u6FBd9yACa4yC4pgAD6BphNoPUTnLvzUuWnO7fuhq6_kpwe0KGb85YPncdXO69bJlNc28GU77NL5SH2nziwGwZaSrA1FRMI1V0rZ3HegTc-wJW1DsekGJmssHGgTjDslh5AAAAIAAAAAIb5Gi8njiythqRnNqHg_d-dzfCiDQsC8ecbLvUxnmC4661C3zlTBxcfa2rl3GpBUJV_phG7pXc-YtxSzOGflcBa8LHnlu-4ssX5saAH9zum4M_YlPQkHolOvbkD2zr0_xzPRD_O5m3OthKKFxNf-xA6KtzwOIn6yZCx4EmOU99H5XuJ1WZkCl1qgYx0BExrqQ5afw2l2C1w7HF2pM-vQQelZsSpLQSwlLZZAFmK5liLkxR12SAtuDWnGyAMlN4HkM8pjXPAKNvV2rhA1YiCY2_kio7cGW_5uRDZ_Pi6Wdzw
+        </token>
+    </IsUserLoggedIn>
+</soap:Body>
+</soap:Envelope> --------------------------------------
+        17.10.2017 08:41:04.585 *INFO* [10.39.68.48 [1508247664542] POST /bin/saxendacare/loginverification HTTP/1.1] org.apache.cxf.services.IPlatformServiceService.IPlatformServicePort.IPlatformService Inbound Message ---------------------------- ID: 978 Response-Code: 200 Encoding: UTF-8 Content-Type: text/xml; charset=utf-8 Headers: {Content-Length=[220], content-type=[text/xml; charset=utf-8], Date=[Tue, 17 Oct 2017 13:41:03 GMT], Server=[Microsoft-IIS/8.5], X-Powered-By=[ASP.NET]}{Content-Length=[220], content-type=[text/xml; charset=utf-8], Date=[Tue, 17 Oct 2017 13:41:03 GMT], Server=[Microsoft-IIS/8.5], X-Powered-By=[ASP.NET]} Payload: <s:Envelope
+xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Body>
+    <IsUserLoggedInResponse xmlns="http://tempuri.org/">
+        <IsUserLoggedInResult>true</IsUserLoggedInResult>
+    </IsUserLoggedInResponse>
+</s:Body>
+</s:Envelope> --------------------------------------
+        17.10.2017 08:41:04.739 *INFO* [10.39.68.48 [1508247664708] POST /content/saxendacare/en/home.mytopactionSC.html HTTP/1.1] org.apache.cxf.services.IPlatformServiceService.IPlatformServicePort.IPlatformService Outbound Message --------------------------- ID: 979 Address: http://api-saxendacare.nnittest.com/NovoObesityPlatform.svc Encoding: UTF-8 Http-Method: POST Content-Type: text/xml Headers: {Accept=[*/*], SOAPAction=["http://tempuri.org/IPlatformService/GetUserDetailsByToken"]} Payload: <soap:Envelope
+xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+<soap:Header>
+    <OAuth xmlns="Token">Key:cwBhAHgAZQBuAGQAYQA6AFEAUgBEAFMANQBEAG4AVQBmAHoAQwAzAEUAZQB3AFcAUABXAG8AUABhAEEAPQA9AA==
+    </OAuth>
+</soap:Header>
+<soap:Body>
+    <GetUserDetailsByToken xmlns="http://tempuri.org/"
+                           xmlns:ns2="http://schemas.datacontract.org/2004/07/Novo.Obesity.Entities"
+                           xmlns:ns3="http://schemas.microsoft.com/2003/10/Serialization/"
+                           xmlns:ns4="http://schemas.datacontract.org/2004/07/System.ServiceModel"
+                           xmlns:ns5="http://schemas.datacontract.org/2004/07/System">
+        <token>
+            gAAAAEvOGksosIdS7h1GpM4FfALdaGguZq4v1vy3SbrcwP-u6FBd9yACa4yC4pgAD6BphNoPUTnLvzUuWnO7fuhq6_kpwe0KGb85YPncdXO69bJlNc28GU77NL5SH2nziwGwZaSrA1FRMI1V0rZ3HegTc-wJW1DsekGJmssHGgTjDslh5AAAAIAAAAAIb5Gi8njiythqRnNqHg_d-dzfCiDQsC8ecbLvUxnmC4661C3zlTBxcfa2rl3GpBUJV_phG7pXc-YtxSzOGflcBa8LHnlu-4ssX5saAH9zum4M_YlPQkHolOvbkD2zr0_xzPRD_O5m3OthKKFxNf-xA6KtzwOIn6yZCx4EmOU99H5XuJ1WZkCl1qgYx0BExrqQ5afw2l2C1w7HF2pM-vQQelZsSpLQSwlLZZAFmK5liLkxR12SAtuDWnGyAMlN4HkM8pjXPAKNvV2rhA1YiCY2_kio7cGW_5uRDZ_Pi6Wdzw
+        </token>
+    </GetUserDetailsByToken>
+</soap:Body>
+</soap:Envelope> --------------------------------------
+        17.10.2017 08:41:04.775 *INFO* [10.39.68.48 [1508247664708] POST /content/saxendacare/en/home.mytopactionSC.html HTTP/1.1] org.apache.cxf.services.IPlatformServiceService.IPlatformServicePort.IPlatformService Inbound Message ---------------------------- ID: 979 Response-Code: 200 Encoding: UTF-8 Content-Type: text/xml; charset=utf-8 Headers: {Content-Length=[2294], content-type=[text/xml; charset=utf-8], Date=[Tue, 17 Oct 2017 13:41:03 GMT], Server=[Microsoft-IIS/8.5], X-Powered-By=[ASP.NET]}{Content-Length=[2294], content-type=[text/xml; charset=utf-8], Date=[Tue, 17 Oct 2017 13:41:03 GMT], Server=[Microsoft-IIS/8.5], X-Powered-By=[ASP.NET]} Payload: <s:Envelope
+xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Body>
+    <GetUserDetailsByTokenResponse xmlns="http://tempuri.org/">
+        <GetUserDetailsByTokenResult xmlns:a="http://schemas.datacontract.org/2004/07/Novo.Obesity.Entities"
+                                     xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+            <a:CreatedDate>2017-10-17T08:40:16.8811184</a:CreatedDate>
+            <a:DosingReminder>false</a:DosingReminder>
+            <a:DosingStartDate>0001-01-01T00:00:00</a:DosingStartDate>
+            <a:FirstName>xptest</a:FirstName>
+            <a:HasCoPayCard>false</a:HasCoPayCard>
+            <a:HasStarterKit>false</a:HasStarterKit>
+            <a:LastLoginDate>2017-10-17T08:41:02.1789609</a:LastLoginDate>
+            <a:LastName>xptest</a:LastName>
+            <a:LastUpdatedDate>0001-01-01T00:00:00</a:LastUpdatedDate>
+            <a:MckessonResponse/>
+            <a:MiddleName/>
+            <a:SecurityQuestionId>1</a:SecurityQuestionId>
+            <a:UserEmail>xptest10170939@test.com</a:UserEmail>
+            <a:UserId>704</a:UserId>
+            <a:ActivityCode>000870102</a:ActivityCode>
+            <a:Address1>1001 N Clovis St</a:Address1>
+            <a:Address2/>
+            <a:BirthDate>1958-01-02T00:00:00</a:BirthDate>
+            <a:City>Clovis</a:City>
+            <a:EmailAddress>xptest10170939@test.com</a:EmailAddress>
+            <a:GuardianEmail i:nil="true"/>
+            <a:GuardianFirstName i:nil="true"/>
+            <a:GuardianLastName i:nil="true"/>
+            <a:GuardianPermission>false</a:GuardianPermission>
+            <a:IndividualPreferences/>
+            <a:IsCaregiver>false</a:IsCaregiver>
+            <a:IsParent>false</a:IsParent>
+            <a:Language i:nil="true"/>
+            <a:MRIModuleId i:nil="true"/>
+            <a:MRIModuleName i:nil="true"/>
+            <a:MRIModuleStatus i:nil="true"/>
+            <a:MRISelfAssessmentStatus i:nil="true"/>
+            <a:MobilePhone/>
+            <a:OptInDate>2017-10-17T08:40:16.8811184</a:OptInDate>
+            <a:PatientBirthDate i:nil="true"/>
+            <a:PatientFirstName i:nil="true"/>
+            <a:PatientLastName i:nil="true"/>
+            <a:PatientMiddleName i:nil="true"/>
+            <a:Permission_to_call_yn>false</a:Permission_to_call_yn>
+            <a:PhoneCallTime>morning</a:PhoneCallTime>
+            <a:PhoneNumber/>
+            <a:PrescribeToSaxenda>true</a:PrescribeToSaxenda>
+            <a:Registration_source>SAXENDACARE</a:Registration_source>
+            <a:Reminders>false</a:Reminders>
+            <a:Startdate>0001-01-01T00:00:00</a:Startdate>
+            <a:Starterkit>false</a:Starterkit>
+            <a:State>DE</a:State>
+            <a:SuperPalActivationCode i:nil="true"/>
+            <a:TypeOfDiabetes>OTHER</a:TypeOfDiabetes>
+            <a:WebKeyId i:nil="true"/>
+            <a:YearDiagnosed i:nil="true"/>
+            <a:ZipCode>12344</a:ZipCode>
+        </GetUserDetailsByTokenResult>
+    </GetUserDetailsByTokenResponse>
+</s:Body>
+</s:Envelope> --------------------------------------
+        17.10.2017 08:41:04.803 *INFO* [10.39.68.48 [1508247664708] POST /content/saxendacare/en/home.mytopactionSC.html HTTP/1.1] org.apache.cxf.services.IPlatformServiceService.IPlatformServicePort.IPlatformService Outbound Message --------------------------- ID: 980 Address: http://api-saxendacare.nnittest.com/NovoObesityPlatform.svc Encoding: UTF-8 Http-Method: POST Content-Type: text/xml Headers: {Accept=[*/*], SOAPAction=["http://tempuri.org/IPlatformService/GetTopActionByUserID"]} Payload: <soap:Envelope
+xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+<soap:Header>
+    <OAuth xmlns="Token">Key:cwBhAHgAZQBuAGQAYQA6AFEAUgBEAFMANQBEAG4AVQBmAHoAQwAzAEUAZQB3AFcAUABXAG8AUABhAEEAPQA9AA==
+    </OAuth>
+</soap:Header>
+<soap:Body>
+    <GetTopActionByUserID xmlns="http://tempuri.org/"
+                          xmlns:ns2="http://schemas.datacontract.org/2004/07/Novo.Obesity.Entities"
+                          xmlns:ns3="http://schemas.microsoft.com/2003/10/Serialization/"
+                          xmlns:ns4="http://schemas.datacontract.org/2004/07/System.ServiceModel"
+                          xmlns:ns5="http://schemas.datacontract.org/2004/07/System">
+        <userId>704</userId>
+    </GetTopActionByUserID>
+</soap:Body>
+</soap:Envelope> --------------------------------------
+        17.10.2017 08:41:04.812 *INFO* [10.39.68.48 [1508247664708] POST /content/saxendacare/en/home.mytopactionSC.html HTTP/1.1] org.apache.cxf.services.IPlatformServiceService.IPlatformServicePort.IPlatformService Inbound Message ---------------------------- ID: 980 Response-Code: 200 Encoding: UTF-8 Content-Type: text/xml; charset=utf-8 Headers: {Content-Length=[698], content-type=[text/xml; charset=utf-8], Date=[Tue, 17 Oct 2017 13:41:03 GMT], Server=[Microsoft-IIS/8.5], X-Powered-By=[ASP.NET]}{Content-Length=[698], content-type=[text/xml; charset=utf-8], Date=[Tue, 17 Oct 2017 13:41:03 GMT], Server=[Microsoft-IIS/8.5], X-Powered-By=[ASP.NET]} Payload: <s:Envelope
+xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Body>
+    <GetTopActionByUserIDResponse xmlns="http://tempuri.org/">
+        <GetTopActionByUserIDResult xmlns:a="http://schemas.datacontract.org/2004/07/Novo.Obesity.Entities"
+                                    xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+            <a:Completed>false</a:Completed>
+            <a:CompletedDate>0001-01-01T00:00:00</a:CompletedDate>
+            <a:CreatedDate>0001-01-01T00:00:00</a:CreatedDate>
+            <a:Deleted>false</a:Deleted>
+            <a:DeletedDate>0001-01-01T00:00:00</a:DeletedDate>
+            <a:Description i:nil="true"/>
+            <a:ExternalId>0</a:ExternalId>
+            <a:Id>0</a:Id>
+            <a:Image i:nil="true"/>
+            <a:Layout i:nil="true"/>
+        </GetTopActionByUserIDResult>
+    </GetTopActionByUserIDResponse>
+</s:Body>
+</s:Envelope> --------------------------------------
+        17.10.2017 08:41:06.678 *INFO* [10.39.68.48 [1508247666654] GET /content/saxendacare/en/my-settings.html HTTP/1.1] org.apache.cxf.services.IPlatformServiceService.IPlatformServicePort.IPlatformService Outbound Message --------------------------- ID: 981 Address: http://api-saxendacare.nnittest.com/NovoObesityPlatform.svc Encoding: UTF-8 Http-Method: POST Content-Type: text/xml Headers: {Accept=[*/*], SOAPAction=["http://tempuri.org/IPlatformService/IsUserLoggedIn"]} Payload: <soap:Envelope
+xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+<soap:Header>
+    <OAuth xmlns="Token">Key:cwBhAHgAZQBuAGQAYQA6AFEAUgBEAFMANQBEAG4AVQBmAHoAQwAzAEUAZQB3AFcAUABXAG8AUABhAEEAPQA9AA==
+    </OAuth>
+</soap:Header>
+<soap:Body>
+    <IsUserLoggedIn xmlns="http://tempuri.org/"
+                    xmlns:ns2="http://schemas.datacontract.org/2004/07/Novo.Obesity.Entities"
+                    xmlns:ns3="http://schemas.microsoft.com/2003/10/Serialization/"
+                    xmlns:ns4="http://schemas.datacontract.org/2004/07/System.ServiceModel"
+                    xmlns:ns5="http://schemas.datacontract.org/2004/07/System">
+        <token>
+            gAAAAEvOGksosIdS7h1GpM4FfALdaGguZq4v1vy3SbrcwP-u6FBd9yACa4yC4pgAD6BphNoPUTnLvzUuWnO7fuhq6_kpwe0KGb85YPncdXO69bJlNc28GU77NL5SH2nziwGwZaSrA1FRMI1V0rZ3HegTc-wJW1DsekGJmssHGgTjDslh5AAAAIAAAAAIb5Gi8njiythqRnNqHg_d-dzfCiDQsC8ecbLvUxnmC4661C3zlTBxcfa2rl3GpBUJV_phG7pXc-YtxSzOGflcBa8LHnlu-4ssX5saAH9zum4M_YlPQkHolOvbkD2zr0_xzPRD_O5m3OthKKFxNf-xA6KtzwOIn6yZCx4EmOU99H5XuJ1WZkCl1qgYx0BExrqQ5afw2l2C1w7HF2pM-vQQelZsSpLQSwlLZZAFmK5liLkxR12SAtuDWnGyAMlN4HkM8pjXPAKNvV2rhA1YiCY2_kio7cGW_5uRDZ_Pi6Wdzw
+        </token>
+    </IsUserLoggedIn>
+</soap:Body>
+</soap:Envelope> --------------------------------------
+        17.10.2017 08:41:06.690 *INFO* [10.39.68.48 [1508247666654] GET /content/saxendacare/en/my-settings.html HTTP/1.1] org.apache.cxf.services.IPlatformServiceService.IPlatformServicePort.IPlatformService Inbound Message ---------------------------- ID: 981 Response-Code: 200 Encoding: UTF-8 Content-Type: text/xml; charset=utf-8 Headers: {Content-Length=[220], content-type=[text/xml; charset=utf-8], Date=[Tue, 17 Oct 2017 13:41:05 GMT], Server=[Microsoft-IIS/8.5], X-Powered-By=[ASP.NET]}{Content-Length=[220], content-type=[text/xml; charset=utf-8], Date=[Tue, 17 Oct 2017 13:41:05 GMT], Server=[Microsoft-IIS/8.5], X-Powered-By=[ASP.NET]} Payload: <s:Envelope
+xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Body>
+    <IsUserLoggedInResponse xmlns="http://tempuri.org/">
+        <IsUserLoggedInResult>true</IsUserLoggedInResult>
+    </IsUserLoggedInResponse>
+</s:Body>
+</s:Envelope> --------------------------------------
+        17.10.2017 08:41:07.202 *INFO* [10.39.68.48 [1508247667179] POST /bin/saxendacare/loginverification HTTP/1.1] org.apache.cxf.services.IPlatformServiceService.IPlatformServicePort.IPlatformService Outbound Message --------------------------- ID: 982 Address: http://api-saxendacare.nnittest.com/NovoObesityPlatform.svc Encoding: UTF-8 Http-Method: POST Content-Type: text/xml Headers: {Accept=[*/*], SOAPAction=["http://tempuri.org/IPlatformService/IsUserLoggedIn"]} Payload: <soap:Envelope
+xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+<soap:Header>
+    <OAuth xmlns="Token">Key:cwBhAHgAZQBuAGQAYQA6AFEAUgBEAFMANQBEAG4AVQBmAHoAQwAzAEUAZQB3AFcAUABXAG8AUABhAEEAPQA9AA==
+    </OAuth>
+</soap:Header>
+<soap:Body>
+    <IsUserLoggedIn xmlns="http://tempuri.org/"
+                    xmlns:ns2="http://schemas.datacontract.org/2004/07/Novo.Obesity.Entities"
+                    xmlns:ns3="http://schemas.microsoft.com/2003/10/Serialization/"
+                    xmlns:ns4="http://schemas.datacontract.org/2004/07/System.ServiceModel"
+                    xmlns:ns5="http://schemas.datacontract.org/2004/07/System">
+        <token>
+            gAAAAEvOGksosIdS7h1GpM4FfALdaGguZq4v1vy3SbrcwP-u6FBd9yACa4yC4pgAD6BphNoPUTnLvzUuWnO7fuhq6_kpwe0KGb85YPncdXO69bJlNc28GU77NL5SH2nziwGwZaSrA1FRMI1V0rZ3HegTc-wJW1DsekGJmssHGgTjDslh5AAAAIAAAAAIb5Gi8njiythqRnNqHg_d-dzfCiDQsC8ecbLvUxnmC4661C3zlTBxcfa2rl3GpBUJV_phG7pXc-YtxSzOGflcBa8LHnlu-4ssX5saAH9zum4M_YlPQkHolOvbkD2zr0_xzPRD_O5m3OthKKFxNf-xA6KtzwOIn6yZCx4EmOU99H5XuJ1WZkCl1qgYx0BExrqQ5afw2l2C1w7HF2pM-vQQelZsSpLQSwlLZZAFmK5liLkxR12SAtuDWnGyAMlN4HkM8pjXPAKNvV2rhA1YiCY2_kio7cGW_5uRDZ_Pi6Wdzw
+        </token>
+    </IsUserLoggedIn>
+</soap:Body>
+</soap:Envelope> --------------------------------------
+        17.10.2017 08:41:07.213 *INFO* [10.39.68.48 [1508247667179] POST /bin/saxendacare/loginverification HTTP/1.1] org.apache.cxf.services.IPlatformServiceService.IPlatformServicePort.IPlatformService Inbound Message ---------------------------- ID: 982 Response-Code: 200 Encoding: UTF-8 Content-Type: text/xml; charset=utf-8 Headers: {Content-Length=[220], content-type=[text/xml; charset=utf-8], Date=[Tue, 17 Oct 2017 13:41:05 GMT], Server=[Microsoft-IIS/8.5], X-Powered-By=[ASP.NET]}{Content-Length=[220], content-type=[text/xml; charset=utf-8], Date=[Tue, 17 Oct 2017 13:41:05 GMT], Server=[Microsoft-IIS/8.5], X-Powered-By=[ASP.NET]} Payload: <s:Envelope
+xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Body>
+    <IsUserLoggedInResponse xmlns="http://tempuri.org/">
+        <IsUserLoggedInResult>true</IsUserLoggedInResult>
+    </IsUserLoggedInResponse>
+</s:Body>
+</s:Envelope> --------------------------------------
+        17.10.2017 08:41:07.308 *INFO* [10.39.68.48 [1508247667284] POST /content/saxendacare/en/my-settings.userByTokenO.html HTTP/1.1] org.apache.cxf.services.IPlatformServiceService.IPlatformServicePort.IPlatformService Outbound Message --------------------------- ID: 983 Address: http://api-saxendacare.nnittest.com/NovoObesityPlatform.svc Encoding: UTF-8 Http-Method: POST Content-Type: text/xml Headers: {Accept=[*/*], SOAPAction=["http://tempuri.org/IPlatformService/GetUserDetailsByToken"]} Payload: <soap:Envelope
+xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+<soap:Header>
+    <OAuth xmlns="Token">Key:cwBhAHgAZQBuAGQAYQA6AFEAUgBEAFMANQBEAG4AVQBmAHoAQwAzAEUAZQB3AFcAUABXAG8AUABhAEEAPQA9AA==
+    </OAuth>
+</soap:Header>
+<soap:Body>
+    <GetUserDetailsByToken xmlns="http://tempuri.org/"
+                           xmlns:ns2="http://schemas.datacontract.org/2004/07/Novo.Obesity.Entities"
+                           xmlns:ns3="http://schemas.microsoft.com/2003/10/Serialization/"
+                           xmlns:ns4="http://schemas.datacontract.org/2004/07/System.ServiceModel"
+                           xmlns:ns5="http://schemas.datacontract.org/2004/07/System">
+        <token>
+            gAAAAEvOGksosIdS7h1GpM4FfALdaGguZq4v1vy3SbrcwP-u6FBd9yACa4yC4pgAD6BphNoPUTnLvzUuWnO7fuhq6_kpwe0KGb85YPncdXO69bJlNc28GU77NL5SH2nziwGwZaSrA1FRMI1V0rZ3HegTc-wJW1DsekGJmssHGgTjDslh5AAAAIAAAAAIb5Gi8njiythqRnNqHg_d-dzfCiDQsC8ecbLvUxnmC4661C3zlTBxcfa2rl3GpBUJV_phG7pXc-YtxSzOGflcBa8LHnlu-4ssX5saAH9zum4M_YlPQkHolOvbkD2zr0_xzPRD_O5m3OthKKFxNf-xA6KtzwOIn6yZCx4EmOU99H5XuJ1WZkCl1qgYx0BExrqQ5afw2l2C1w7HF2pM-vQQelZsSpLQSwlLZZAFmK5liLkxR12SAtuDWnGyAMlN4HkM8pjXPAKNvV2rhA1YiCY2_kio7cGW_5uRDZ_Pi6Wdzw
+        </token>
+    </GetUserDetailsByToken>
+</soap:Body>
+</soap:Envelope> --------------------------------------
+        17.10.2017 08:41:07.334 *INFO* [10.39.68.48 [1508247667284] POST /content/saxendacare/en/my-settings.userByTokenO.html HTTP/1.1] org.apache.cxf.services.IPlatformServiceService.IPlatformServicePort.IPlatformService Inbound Message ---------------------------- ID: 983 Response-Code: 200 Encoding: UTF-8 Content-Type: text/xml; charset=utf-8 Headers: {Content-Length=[2294], content-type=[text/xml; charset=utf-8], Date=[Tue, 17 Oct 2017 13:41:05 GMT], Server=[Microsoft-IIS/8.5], X-Powered-By=[ASP.NET]}{Content-Length=[2294], content-type=[text/xml; charset=utf-8], Date=[Tue, 17 Oct 2017 13:41:05 GMT], Server=[Microsoft-IIS/8.5], X-Powered-By=[ASP.NET]} Payload: <s:Envelope
+xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Body>
+    <GetUserDetailsByTokenResponse xmlns="http://tempuri.org/">
+        <GetUserDetailsByTokenResult xmlns:a="http://schemas.datacontract.org/2004/07/Novo.Obesity.Entities"
+                                     xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+            <a:CreatedDate>2017-10-17T08:40:16.8811184</a:CreatedDate>
+            <a:DosingReminder>false</a:DosingReminder>
+            <a:DosingStartDate>0001-01-01T00:00:00</a:DosingStartDate>
+            <a:FirstName>xptest</a:FirstName>
+            <a:HasCoPayCard>false</a:HasCoPayCard>
+            <a:HasStarterKit>false</a:HasStarterKit>
+            <a:LastLoginDate>2017-10-17T08:41:02.1789609</a:LastLoginDate>
+            <a:LastName>xptest</a:LastName>
+            <a:LastUpdatedDate>0001-01-01T00:00:00</a:LastUpdatedDate>
+            <a:MckessonResponse/>
+            <a:MiddleName/>
+            <a:SecurityQuestionId>1</a:SecurityQuestionId>
+            <a:UserEmail>xptest10170939@test.com</a:UserEmail>
+            <a:UserId>704</a:UserId>
+            <a:ActivityCode>000870102</a:ActivityCode>
+            <a:Address1>1001 N Clovis St</a:Address1>
+            <a:Address2/>
+            <a:BirthDate>1958-01-02T00:00:00</a:BirthDate>
+            <a:City>Clovis</a:City>
+            <a:EmailAddress>xptest10170939@test.com</a:EmailAddress>
+            <a:GuardianEmail i:nil="true"/>
+            <a:GuardianFirstName i:nil="true"/>
+            <a:GuardianLastName i:nil="true"/>
+            <a:GuardianPermission>false</a:GuardianPermission>
+            <a:IndividualPreferences/>
+            <a:IsCaregiver>false</a:IsCaregiver>
+            <a:IsParent>false</a:IsParent>
+            <a:Language i:nil="true"/>
+            <a:MRIModuleId i:nil="true"/>
+            <a:MRIModuleName i:nil="true"/>
+            <a:MRIModuleStatus i:nil="true"/>
+            <a:MRISelfAssessmentStatus i:nil="true"/>
+            <a:MobilePhone/>
+            <a:OptInDate>2017-10-17T08:40:16.8811184</a:OptInDate>
+            <a:PatientBirthDate i:nil="true"/>
+            <a:PatientFirstName i:nil="true"/>
+            <a:PatientLastName i:nil="true"/>
+            <a:PatientMiddleName i:nil="true"/>
+            <a:Permission_to_call_yn>false</a:Permission_to_call_yn>
+            <a:PhoneCallTime>morning</a:PhoneCallTime>
+            <a:PhoneNumber/>
+            <a:PrescribeToSaxenda>true</a:PrescribeToSaxenda>
+            <a:Registration_source>SAXENDACARE</a:Registration_source>
+            <a:Reminders>false</a:Reminders>
+            <a:Startdate>0001-01-01T00:00:00</a:Startdate>
+            <a:Starterkit>false</a:Starterkit>
+            <a:State>DE</a:State>
+            <a:SuperPalActivationCode i:nil="true"/>
+            <a:TypeOfDiabetes>OTHER</a:TypeOfDiabetes>
+            <a:WebKeyId i:nil="true"/>
+            <a:YearDiagnosed i:nil="true"/>
+            <a:ZipCode>12344</a:ZipCode>
+        </GetUserDetailsByTokenResult>
+    </GetUserDetailsByTokenResponse>
+</s:Body>
+</s:Envelope> --------------------------------------
+        17.10.2017 08:41:15.427 *INFO* [10.39.68.48 [1508247675395] GET /content/saxendacare/en/login.logoutSiteO.html HTTP/1.1] org.apache.cxf.services.IPlatformServiceService.IPlatformServicePort.IPlatformService Outbound Message --------------------------- ID: 984 Address: http://api-saxendacare.nnittest.com/NovoObesityPlatform.svc Encoding: UTF-8 Http-Method: POST Content-Type: text/xml Headers: {Accept=[*/*], SOAPAction=["http://tempuri.org/IPlatformService/SignOut"]} Payload: <soap:Envelope
+xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+<soap:Header>
+    <OAuth xmlns="Token">Key:cwBhAHgAZQBuAGQAYQA6AFEAUgBEAFMANQBEAG4AVQBmAHoAQwAzAEUAZQB3AFcAUABXAG8AUABhAEEAPQA9AA==
+    </OAuth>
+</soap:Header>
+<soap:Body>
+    <SignOut xmlns="http://tempuri.org/" xmlns:ns2="http://schemas.datacontract.org/2004/07/Novo.Obesity.Entities"
+             xmlns:ns3="http://schemas.microsoft.com/2003/10/Serialization/"
+             xmlns:ns4="http://schemas.datacontract.org/2004/07/System.ServiceModel"
+             xmlns:ns5="http://schemas.datacontract.org/2004/07/System">
+        <token>
+            gAAAAEvOGksosIdS7h1GpM4FfALdaGguZq4v1vy3SbrcwP-u6FBd9yACa4yC4pgAD6BphNoPUTnLvzUuWnO7fuhq6_kpwe0KGb85YPncdXO69bJlNc28GU77NL5SH2nziwGwZaSrA1FRMI1V0rZ3HegTc-wJW1DsekGJmssHGgTjDslh5AAAAIAAAAAIb5Gi8njiythqRnNqHg_d-dzfCiDQsC8ecbLvUxnmC4661C3zlTBxcfa2rl3GpBUJV_phG7pXc-YtxSzOGflcBa8LHnlu-4ssX5saAH9zum4M_YlPQkHolOvbkD2zr0_xzPRD_O5m3OthKKFxNf-xA6KtzwOIn6yZCx4EmOU99H5XuJ1WZkCl1qgYx0BExrqQ5afw2l2C1w7HF2pM-vQQelZsSpLQSwlLZZAFmK5liLkxR12SAtuDWnGyAMlN4HkM8pjXPAKNvV2rhA1YiCY2_kio7cGW_5uRDZ_Pi6Wdzw
+        </token>
+    </SignOut>
+</soap:Body>
+</soap:Envelope> --------------------------------------
+        17.10.2017 08:41:15.468 *INFO* [10.39.68.48 [1508247675395] GET /content/saxendacare/en/login.logoutSiteO.html HTTP/1.1] org.apache.cxf.services.IPlatformServiceService.IPlatformServicePort.IPlatformService Inbound Message ---------------------------- ID: 984 Response-Code: 200 Encoding: UTF-8 Content-Type: text/xml; charset=utf-8 Headers: {Content-Length=[140], content-type=[text/xml; charset=utf-8], Date=[Tue, 17 Oct 2017 13:41:14 GMT], Server=[Microsoft-IIS/8.5], X-Powered-By=[ASP.NET]}{Content-Length=[140], content-type=[text/xml; charset=utf-8], Date=[Tue, 17 Oct 2017 13:41:14 GMT], Server=[Microsoft-IIS/8.5], X-Powered-By=[ASP.NET]} Payload: <s:Envelope
+xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Body>
+    <SignOutResponse xmlns="http://tempuri.org/"/>
+</s:Body>
+</s:Envelope> --------------------------------------

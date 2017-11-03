@@ -1,0 +1,130 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Header>
+        <Auth xmlns="Token">
+            Key:dAByAGUAcwBpAGIAYQAtAHMAcABhAG4AaQBzAGgAOgBNAEYAZQBJADAAcwBKAFQAVgBYAGYAcQBpAEQARgBQAHAAZwBvAEcAYwBRAD0APQA=
+        </Auth>
+    </soap:Header>
+    <soap:Body>
+        <CreateUser xmlns="http://novonordisk-us.com/PlatformService/v2"
+                    xmlns:ns2="http://schemas.datacontract.org/2004/07/Novo.Entities" xmlns:ns3="http://tempuri.org/"
+                    xmlns:ns4="http://schemas.microsoft.com/2003/10/Serialization/"
+                    xmlns:ns5="http://schemas.datacontract.org/2004/07/System.ServiceModel"
+                    xmlns:ns6="http://schemas.microsoft.com/2003/10/Serialization/Arrays"
+                    xmlns:ns7="http://schemas.datacontract.org/2004/07/System"
+                    xmlns:ns8="http://schemas.datacontract.org/2004/07/Novo.Platform.Data.Models">
+            <request>
+                <ns2:ProductRequests xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                <ns2:UserProfile>
+                    <ns2:ActivityCode>000840331</ns2:ActivityCode>
+                    <ns2:Address1>1946 Florence Street</ns2:Address1>
+                    <ns2:Address2></ns2:Address2>
+                    <ns2:BirthDate>2002-05-05T00:00:00.000</ns2:BirthDate>
+                    <ns2:City>CONVERSE</ns2:City>
+                    <ns2:EmailAddress>Langhtest1@test.com</ns2:EmailAddress>
+                    <ns2:FirstName>Abdullah</ns2:FirstName>
+                    <ns2:GuardianEmail>Langhtest@test.com</ns2:GuardianEmail>
+                    <ns2:GuardianFirstName>Abdullah</ns2:GuardianFirstName>
+                    <ns2:GuardianLastName>Lang</ns2:GuardianLastName>
+                    <ns2:GuardianPermission>true</ns2:GuardianPermission>
+                    <ns2:IndividualPreferences>
+                        <ns2:IndividualPreferences>
+                            <ns2:TagId>nni:medication/type1/INSTYPE/TRESIBA/TIMEOT_3M</ns2:TagId>
+                            <ns2:Type>BrandPreferences</ns2:Type>
+                        </ns2:IndividualPreferences>
+                    </ns2:IndividualPreferences>
+                    <ns2:IsCaregiver>false</ns2:IsCaregiver>
+                    <ns2:IsParent>false</ns2:IsParent>
+                    <ns2:Language>en</ns2:Language>
+                    <ns2:LastName>Lang</ns2:LastName>
+                    <ns2:MiddleName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <ns2:MobilePhone>
+                        <ns2:PhoneNumber xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                        <ns2:SMSTextOptInPreference>
+                            <ns2:OptIn>false</ns2:OptIn>
+                            <ns2:OptInDate>2017-11-01T04:01:05.892-05:00</ns2:OptInDate>
+                            <ns2:Version>2</ns2:Version>
+                        </ns2:SMSTextOptInPreference>
+                        <ns2:VoiceOptInPreference>
+                            <ns2:OptIn>false</ns2:OptIn>
+                            <ns2:OptInDate>2017-11-01T04:01:05.892-05:00</ns2:OptInDate>
+                            <ns2:Version>2</ns2:Version>
+                        </ns2:VoiceOptInPreference>
+                    </ns2:MobilePhone>
+                    <ns2:Password>Langh!23</ns2:Password>
+                    <ns2:PatientBirthDate>0001-01-01T00:00:00.000</ns2:PatientBirthDate>
+                    <ns2:PatientFirstName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <ns2:PatientLastName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <ns2:PatientMiddleName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <ns2:PrimaryPhone>
+                        <ns2:PhoneNumber xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                        <ns2:SMSTextOptInPreference>
+                            <ns2:OptIn>false</ns2:OptIn>
+                            <ns2:OptInDate>2017-11-01T04:01:05.892-05:00</ns2:OptInDate>
+                            <ns2:Version>2</ns2:Version>
+                        </ns2:SMSTextOptInPreference>
+                        <ns2:VoiceOptInPreference>
+                            <ns2:OptIn>false</ns2:OptIn>
+                            <ns2:OptInDate>2017-11-01T04:01:05.892-05:00</ns2:OptInDate>
+                            <ns2:Version>2</ns2:Version>
+                        </ns2:VoiceOptInPreference>
+                    </ns2:PrimaryPhone>
+                    <ns2:RegistrationSource>TRESIBA</ns2:RegistrationSource>
+                    <ns2:SecurityAnswer>John</ns2:SecurityAnswer>
+                    <ns2:SecurityQuestionId>childhoodNickName</ns2:SecurityQuestionId>
+                    <ns2:State>IN</ns2:State>
+                    <ns2:SuperPalActivationCode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <ns2:TermsAndConditionsOptIn>
+                        <ns2:OptIn>true</ns2:OptIn>
+                        <ns2:OptInDate>2017-11-01T04:01:05.892-05:00</ns2:OptInDate>
+                        <ns2:Version>2</ns2:Version>
+                    </ns2:TermsAndConditionsOptIn>
+                    <ns2:TypeOfDiabetes>TYPE1</ns2:TypeOfDiabetes>
+                    <ns2:UserEmail>Langhtest1@test.com</ns2:UserEmail>
+                    <ns2:WebKeyId xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <ns2:YearDiagnosed xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <ns2:ZipCode>46919</ns2:ZipCode>
+                </ns2:UserProfile>
+            </request>
+        </CreateUser>
+    </soap:Body>
+</soap:Envelope> --------------------------------------
+        xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Header>
+<Token xmlns="NovoSSO">
+    gAAAAAjxa4_2yBkAXN4EK3wufiw0NaSpFb_6tbETwWDzqMB53PWgg2C14eor-boFD790AqDke7TgDWAYrdcYEoEv3uIawf1hQJ4b7twgZp12B8YqATqCe2FbkdwPh6Kdk_4PcPw9wlIuYHazANIetqdM7nbG9WaRibF4GrB8dri2laHY5AAAAIAAAACXcCGD0jAAuOwT_2IkM-JANVLouGEx01XiRV4M1FkjCIHdkYw5x5a8BIE0Huow__oxTHNwT2GEG4DKato0nyYsh8jXOnV50VOi_LTxT-TPYFcmweUe2sA8h6YLuukQYatKJj6z5hAoMAlKopDL94C_0BzXZy7lKlmALtFGQ2hol5Fqt1PWzFjA7LuUIVipsLovW2OVrNsZWFDUoIrMnnwELojZatLF0LWM_S6OiF27Wj4uLG2jCrepJt2lM1iuDZ2ljEBeN4XMx5_yaRq67bwjCAvFdReDRVD4dPCzHSxPhA
+</Token>
+</s:Header>
+<s:Body>
+<CreateUserResponse xmlns="http://novonordisk-us.com/PlatformService/v2">
+    <CreateUserResult xmlns:a="http://schemas.datacontract.org/2004/07/Novo.Entities"
+                      xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <a:ResponseMessages xmlns:b="http://tempuri.org/"/>
+        <a:Success>true</a:Success>
+        <a:ProductAllocationResponses xmlns:b="http://tempuri.org/"/>
+        <a:User>
+            <a:FirstName>Abdullah</a:FirstName>
+            <a:LastName>Lang</a:LastName>
+            <a:LastUpdatedDate>0001-01-01T00:00:00</a:LastUpdatedDate>
+            <a:MckessonResponse/>
+            <a:MiddleName i:nil="true"/>
+            <a:SecurityQuestionId>1</a:SecurityQuestionId>
+            <a:UserEmail>Langhtest1@test.com</a:UserEmail>
+            <a:UserId>1012380</a:UserId>
+        </a:User>
+    </CreateUserResult>
+</CreateUserResponse>
+</s:Body>
+        </s:Envelope>
+
+
+<soap:Body>
+<IsValidUserId xmlns="http://novonordisk-us.com/PlatformService/v2"
+               xmlns:ns2="http://schemas.datacontract.org/2004/07/Novo.Entities" xmlns:ns3="http://tempuri.org/"
+               xmlns:ns4="http://schemas.microsoft.com/2003/10/Serialization/"
+               xmlns:ns5="http://schemas.datacontract.org/2004/07/System.ServiceModel"
+               xmlns:ns6="http://schemas.microsoft.com/2003/10/Serialization/Arrays"
+               xmlns:ns7="http://schemas.datacontract.org/2004/07/System"
+               xmlns:ns8="http://schemas.datacontract.org/2004/07/Novo.Platform.Data.Models">
+    <userName>Langhtest@test.com</userName>
+</IsValidUserId>
+</soap:Body>
