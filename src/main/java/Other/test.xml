@@ -1,22 +1,380 @@
-18.08.2017 11:28:55.173 *INFO* [10.39.68.43 [1503073734780] POST /content/heartoftype2/en/sign-up-for-more-information.doesEmailExists.html HTTP/1.1] org.apache.cxf.servicesdiabetes.PlatformServiceV2Service.PlatformService.V2Port.PlatformService.V2 Outbound Message --------------------------- ID: 3 Address: https://c4cservices.cornerstones4care.nnittest.com/NovoPlatform.svc Encoding: UTF-8 Http-Method: POST Content-Type: text/xml Headers: {Accept=[*/*], SOAPAction=["http://novonordisk-us.com/PlatformService/v2/PlatformService.V2/IsValidUserId"]} Payload:
+Fiasp
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
     <soap:Header>
         <Auth xmlns="Token">
-            Key:aABlAGEAcgB0AG8AZgB0AHkAcABlADIAOgBvAEsAWABJAFMAOAByADEAdgA5AFUANQA2AGYAOQA5AFQAaQBjAC8AVwBBAD0APQA=
+            Key:dAByAGUAcwBpAGIAYQA6ADkAbABHAHQAMgA3AFgAYQBoAFYAYQBYAGkAYgB2AG0AMAAxAHQAcABJAHcAPQA9AA==
         </Auth>
     </soap:Header>
     <soap:Body>
-        <IsValidUserId xmlns="http://novonordisk-us.com/PlatformService/v2"
-                       xmlns:ns2="http://schemas.datacontract.org/2004/07/Novo.Entities" xmlns:ns3="http://tempuri.org/"
-                       xmlns:ns4="http://schemas.microsoft.com/2003/10/Serialization/"
-                       xmlns:ns5="http://schemas.datacontract.org/2004/07/System.ServiceModel"
-                       xmlns:ns6="http://schemas.microsoft.com/2003/10/Serialization/Arrays"
-                       xmlns:ns7="http://schemas.datacontract.org/2004/07/System"
-                       xmlns:ns8="http://schemas.datacontract.org/2004/07/Novo.Platform.Data.Models">
-            <userName>xptest08181228@test.com</userName>
-        </IsValidUserId>
+        <CreateUser xmlns="http://novonordisk-us.com/PlatformService/v2"
+                    xmlns:ns2="http://schemas.datacontract.org/2004/07/Novo.Entities" xmlns:ns3="http://tempuri.org/"
+                    xmlns:ns4="http://schemas.microsoft.com/2003/10/Serialization/"
+                    xmlns:ns5="http://schemas.datacontract.org/2004/07/System.ServiceModel"
+                    xmlns:ns6="http://schemas.microsoft.com/2003/10/Serialization/Arrays"
+                    xmlns:ns7="http://schemas.datacontract.org/2004/07/System"
+                    xmlns:ns8="http://schemas.datacontract.org/2004/07/Novo.Platform.Data.Models">
+            <request>
+                <ns2:ProductRequests xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                <ns2:UserProfile>
+                    <ns2:ActivityCode>000930031</ns2:ActivityCode>
+                    <ns2:Address1>123 N street</ns2:Address1>
+                    <ns2:Address2></ns2:Address2>
+                    <ns2:BirthDate>0001-01-01T00:00:00.000</ns2:BirthDate>
+                    <ns2:City>North</ns2:City>
+                    <ns2:EmailAddress>xptest0102@test.com</ns2:EmailAddress>
+                    <ns2:FirstName>xptest</ns2:FirstName>
+                    <ns2:GuardianEmail xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <ns2:GuardianFirstName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <ns2:GuardianLastName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <ns2:GuardianPermission>false</ns2:GuardianPermission>
+                    <ns2:IndividualPreferences>
+                        <ns2:IndividualPreferences>
+                            <ns2:TagId>nni:medication/type1/INSTYPE/FIASP/TIMEOT_3M</ns2:TagId>
+                            <ns2:Type>BrandPreferences</ns2:Type>
+                        </ns2:IndividualPreferences>
+                    </ns2:IndividualPreferences>
+                    <ns2:IsCaregiver>true</ns2:IsCaregiver>
+                    <ns2:IsParent>false</ns2:IsParent>
+                    <ns2:Language>en</ns2:Language>
+                    <ns2:LastName>xptest</ns2:LastName>
+                    <ns2:MiddleName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <ns2:MobilePhone>
+                        <ns2:PhoneNumber xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                        <ns2:SMSTextOptInPreference>
+                            <ns2:OptIn>true</ns2:OptIn>
+                            <ns2:OptInDate>2018-01-02T14:49:57.700-06:00</ns2:OptInDate>
+                            <ns2:Version>2</ns2:Version>
+                        </ns2:SMSTextOptInPreference>
+                        <ns2:VoiceOptInPreference>
+                            <ns2:OptIn>true</ns2:OptIn>
+                            <ns2:OptInDate>2018-01-02T14:49:57.700-06:00</ns2:OptInDate>
+                            <ns2:Version>2</ns2:Version>
+                        </ns2:VoiceOptInPreference>
+                    </ns2:MobilePhone>
+                    <ns2:Password>Test1234</ns2:Password>
+                    <ns2:PatientBirthDate>1988-01-01T00:00:00.000</ns2:PatientBirthDate>
+                    <ns2:PatientFirstName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <ns2:PatientLastName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <ns2:PatientMiddleName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <ns2:PrimaryPhone>
+                        <ns2:PhoneNumber>1111111111</ns2:PhoneNumber>
+                        <ns2:SMSTextOptInPreference>
+                            <ns2:OptIn>true</ns2:OptIn>
+                            <ns2:OptInDate>2018-01-02T14:49:57.700-06:00</ns2:OptInDate>
+                            <ns2:Version>2</ns2:Version>
+                        </ns2:SMSTextOptInPreference>
+                        <ns2:VoiceOptInPreference>
+                            <ns2:OptIn>true</ns2:OptIn>
+                            <ns2:OptInDate>2018-01-02T14:49:57.700-06:00</ns2:OptInDate>
+                            <ns2:Version>2</ns2:Version>
+                        </ns2:VoiceOptInPreference>
+                    </ns2:PrimaryPhone>
+                    <ns2:RegistrationSource>FIASP</ns2:RegistrationSource>
+                    <ns2:SecurityAnswer>novo</ns2:SecurityAnswer>
+                    <ns2:SecurityQuestionId>childhoodNickName</ns2:SecurityQuestionId>
+                    <ns2:State>CA</ns2:State>
+                    <ns2:SuperPalActivationCode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <ns2:TermsAndConditionsOptIn>
+                        <ns2:OptIn>true</ns2:OptIn>
+                        <ns2:OptInDate>2018-01-02T14:49:57.699-06:00</ns2:OptInDate>
+                        <ns2:Version>2</ns2:Version>
+                    </ns2:TermsAndConditionsOptIn>
+                    <ns2:TypeOfDiabetes>TYPE1</ns2:TypeOfDiabetes>
+                    <ns2:UserEmail>xptest0102@test.com</ns2:UserEmail>
+                    <ns2:WebKeyId xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <ns2:YearDiagnosed xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <ns2:ZipCode>12345</ns2:ZipCode>
+                </ns2:UserProfile>
+            </request>
+        </CreateUser>
     </soap:Body>
 </soap:Envelope> --------------------------------------
+        02.01.2018 14:50:12.415 *INFO* [10.39.68.48 [1514926197693] POST /content/fiasp/en/get-more-information.registerSite.html HTTP/1.1] org.apache.cxf.servicesdiabetes.PlatformServiceV2Service.PlatformService.V2Port.PlatformService.V2 Inbound Message ---------------------------- ID: 179 Response-Code: 200 Encoding: UTF-8 Content-Type: text/xml; charset=utf-8 Headers: {Content-Length=[1326], content-type=[text/xml; charset=utf-8], Date=[Tue, 02 Jan 2018 20:50:12 GMT], Server=[Microsoft-IIS/8.5], X-Powered-By=[ASP.NET]}{Content-Length=[1326], content-type=[text/xml; charset=utf-8], Date=[Tue, 02 Jan 2018 20:50:12 GMT], Server=[Microsoft-IIS/8.5], X-Powered-By=[ASP.NET]} Payload: <s:Envelope
+xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Header>
+    <Token xmlns="NovoSSO">
+        gAAAAI129Pzi04gfbOlvXcWX1lf6xVCyMCg8q0QynYOlt3zmx3GmnzcD4078CmImnExahSQfMNElYZmGkw-ARX8QNBo1BHkp6yFEq1CgiyjzCyREh6RqN5MUZM8kSUJ6wUmJ4eDqyk7_unAb38kGblGkpqUUXRmf-LiDUx4ynmTl4TQr5AAAAIAAAACMrZ-EqoYpWyfsTun2U0HYMsKtE_GgFP2uLBmDvDd93_e1QP57208R2Da7Dfzj87zpVsVc2n7SPiAqiiljYtUlB_xl8PsC_I6AvF_FLsUWmQTC4V6QLFftRXqqz3mHHGxWkg-ZlHj-LgoPapZwVVkS-1FC65WrCQyBKrXt43oRdJS8eNdLkJ1PQKtHRbmlmMNQxQUCc-4E8HseTBbrbqeqYwsbtFUFT-jyJq_MQNodO7xXOwEUH5ZY7nOi-u4l-CpDF45mM-CmnF7p2AmkN0RQg4Su9OqbX8H4OMnxd_OMEw
+    </Token>
+</s:Header>
+<s:Body>
+    <CreateUserResponse xmlns="http://novonordisk-us.com/PlatformService/v2">
+        <CreateUserResult xmlns:a="http://schemas.datacontract.org/2004/07/Novo.Entities"
+                          xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+            <a:ResponseMessages xmlns:b="http://tempuri.org/"/>
+            <a:Success>true</a:Success>
+            <a:ProductAllocationResponses xmlns:b="http://tempuri.org/"/>
+            <a:User>
+                <a:FirstName>xptest</a:FirstName>
+                <a:LastName>xptest</a:LastName>
+                <a:LastUpdatedDate>0001-01-01T00:00:00</a:LastUpdatedDate>
+                <a:MckessonResponse/>
+                <a:MiddleName i:nil="true"/>
+                <a:SecurityQuestionId>1</a:SecurityQuestionId>
+                <a:UserEmail>xptest0102@test.com</a:UserEmail>
+                <a:UserId>1013370</a:UserId>
+            </a:User>
+        </CreateUserResult>
+    </CreateUserResponse>
+</s:Body>
+</s:Envelope>
+
+
+        18.08.2017 11:28:55.173 *INFO* [10.39.68.43 [1503073734780] POST /content/heartoftype2/en/sign-up-for-more-information.doesEmailExists.html HTTP/1.1] org.apache.cxf.servicesdiabetes.PlatformServiceV2Service.PlatformService.V2Port.PlatformService.V2 Outbound Message --------------------------- ID: 3 Address: https://c4cservices.cornerstones4care.nnittest.com/NovoPlatform.svc Encoding: UTF-8 Http-Method: POST Content-Type: text/xml Headers: {Accept=[*/*], SOAPAction=["http://novonordisk-us.com/PlatformService/v2/PlatformService.V2/IsValidUserId"]} Payload:
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+<soap:Header>
+    <Auth xmlns="Token">
+        Key:aABlAGEAcgB0AG8AZgB0AHkAcABlADIAOgBvAEsAWABJAFMAOAByADEAdgA5AFUANQA2AGYAOQA5AFQAaQBjAC8AVwBBAD0APQA=
+    </Auth>
+</soap:Header>
+<soap:Body>
+    <IsValidUserId xmlns="http://novonordisk-us.com/PlatformService/v2"
+                   xmlns:ns2="http://schemas.datacontract.org/2004/07/Novo.Entities" xmlns:ns3="http://tempuri.org/"
+                   xmlns:ns4="http://schemas.microsoft.com/2003/10/Serialization/"
+                   xmlns:ns5="http://schemas.datacontract.org/2004/07/System.ServiceModel"
+                   xmlns:ns6="http://schemas.microsoft.com/2003/10/Serialization/Arrays"
+                   xmlns:ns7="http://schemas.datacontract.org/2004/07/System"
+                   xmlns:ns8="http://schemas.datacontract.org/2004/07/Novo.Platform.Data.Models">
+        <userName>xptest08181228@test.com</userName>
+    </IsValidUserId>
+</soap:Body>
+</soap:Envelope> --------------------------------------
+
+
+        soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Header>
+<Auth xmlns="Token">Key:dAByAGUAcwBpAGIAYQA6ADkAbABHAHQAMgA3AFgAYQBoAFYAYQBYAGkAYgB2AG0AMAAxAHQAcABJAHcAPQA9AA==</Auth>
+</soap:Header><soap:Body>
+<CreateUser xmlns="http://novonordisk-us.com/PlatformService/v2"
+            xmlns:ns2="http://schemas.datacontract.org/2004/07/Novo.Entities" xmlns:ns3="http://tempuri.org/"
+            xmlns:ns4="http://schemas.microsoft.com/2003/10/Serialization/"
+            xmlns:ns5="http://schemas.datacontract.org/2004/07/System.ServiceModel"
+            xmlns:ns6="http://schemas.microsoft.com/2003/10/Serialization/Arrays"
+            xmlns:ns7="http://schemas.datacontract.org/2004/07/System"
+            xmlns:ns8="http://schemas.datacontract.org/2004/07/Novo.Platform.Data.Models">
+    <request>
+        <ns2:ProductRequests xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <ns2:UserProfile>
+            <ns2:ActivityCode>000930031</ns2:ActivityCode>
+            <ns2:Address1>100 N Street</ns2:Address1>
+            <ns2:Address2></ns2:Address2>
+            <ns2:BirthDate>0001-01-01T00:00:00.000</ns2:BirthDate>
+            <ns2:City>Martin</ns2:City>
+            <ns2:EmailAddress>xptest20180102@test.com</ns2:EmailAddress>
+            <ns2:FirstName>xptest</ns2:FirstName>
+            <ns2:GuardianEmail xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+            <ns2:GuardianFirstName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+            <ns2:GuardianLastName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+            <ns2:GuardianPermission>false</ns2:GuardianPermission>
+            <ns2:IndividualPreferences>
+                <ns2:IndividualPreferences>
+                    <ns2:TagId>nni:medication/type2/INSTYPE/FIASP/TIMEOT_3M</ns2:TagId>
+                    <ns2:Type>BrandPreferences</ns2:Type>
+                </ns2:IndividualPreferences>
+            </ns2:IndividualPreferences>
+            <ns2:IsCaregiver>true</ns2:IsCaregiver>
+            <ns2:IsParent>false</ns2:IsParent>
+            <ns2:Language>en</ns2:Language>
+            <ns2:LastName>xptest</ns2:LastName>
+            <ns2:MiddleName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+            <ns2:MobilePhone>
+                <ns2:PhoneNumber xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                <ns2:SMSTextOptInPreference>
+                    <ns2:OptIn>false</ns2:OptIn>
+                    <ns2:OptInDate>2018-01-02T16:01:38.052-06:00</ns2:OptInDate>
+                    <ns2:Version>2</ns2:Version>
+                </ns2:SMSTextOptInPreference>
+                <ns2:VoiceOptInPreference>
+                    <ns2:OptIn>false</ns2:OptIn>
+                    <ns2:OptInDate>2018-01-02T16:01:38.052-06:00</ns2:OptInDate>
+                    <ns2:Version>2</ns2:Version>
+                </ns2:VoiceOptInPreference>
+            </ns2:MobilePhone>
+            <ns2:Password>Test1234</ns2:Password>
+            <ns2:PatientBirthDate>1977-01-01T00:00:00.000</ns2:PatientBirthDate>
+            <ns2:PatientFirstName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+            <ns2:PatientLastName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+            <ns2:PatientMiddleName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+            <ns2:PrimaryPhone>
+                <ns2:PhoneNumber>2222222222</ns2:PhoneNumber>
+                <ns2:SMSTextOptInPreference>
+                    <ns2:OptIn>false</ns2:OptIn>
+                    <ns2:OptInDate>2018-01-02T16:01:38.052-06:00</ns2:OptInDate>
+                    <ns2:Version>2</ns2:Version>
+                </ns2:SMSTextOptInPreference>
+                <ns2:VoiceOptInPreference>
+                    <ns2:OptIn>false</ns2:OptIn>
+                    <ns2:OptInDate>2018-01-02T16:01:38.052-06:00</ns2:OptInDate>
+                    <ns2:Version>2</ns2:Version>
+                </ns2:VoiceOptInPreference>
+            </ns2:PrimaryPhone>
+            <ns2:RegistrationSource>FIASP</ns2:RegistrationSource>
+            <ns2:SecurityAnswer>novo</ns2:SecurityAnswer>
+            <ns2:SecurityQuestionId>childhoodNickName</ns2:SecurityQuestionId>
+            <ns2:State>TN</ns2:State>
+            <ns2:SuperPalActivationCode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+            <ns2:TermsAndConditionsOptIn>
+                <ns2:OptIn>true</ns2:OptIn>
+                <ns2:OptInDate>2018-01-02T16:01:38.052-06:00</ns2:OptInDate>
+                <ns2:Version>2</ns2:Version>
+            </ns2:TermsAndConditionsOptIn>
+            <ns2:TypeOfDiabetes>TYPE2</ns2:TypeOfDiabetes>
+            <ns2:UserEmail>xptest20180102@test.com</ns2:UserEmail>
+            <ns2:WebKeyId xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+            <ns2:YearDiagnosed xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+            <ns2:ZipCode>40545</ns2:ZipCode>
+        </ns2:UserProfile>
+    </request>
+</CreateUser>
+</soap:Body></soap:Envelope> --------------------------------------
+        02.01.2018 16:01:57.693 *INFO* [10.39.68.48 [1514930498048] POST /content/fiasp/en/get-more-information.registerSite.html HTTP/1.1] org.apache.cxf.servicesdiabetes.PlatformServiceV2Service.PlatformService.V2Port.PlatformService.V2 Inbound Message ---------------------------- ID: 182 Response-Code: 200 Encoding: UTF-8 Content-Type: text/xml; charset=utf-8 Headers: {Content-Length=[1330], content-type=[text/xml; charset=utf-8], Date=[Tue, 02 Jan 2018 22:01:57 GMT], Server=[Microsoft-IIS/8.5], X-Powered-By=[ASP.NET]}{Content-Length=[1330], content-type=[text/xml; charset=utf-8], Date=[Tue, 02 Jan 2018 22:01:57 GMT], Server=[Microsoft-IIS/8.5], X-Powered-By=[ASP.NET]} Payload: <s:Envelope
+xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Header>
+    <Token xmlns="NovoSSO">
+        gAAAAFtQCpFjJCaFGAJS8AeoFhgw9QyqGo0C8vr8Qnx4-ZnHtd6zPjbVwdbLEtAJZCqcXrQJiyBsJxRaD9Y_wxYXpF37-3b1Xtcai3z_cD7X83cbSlaUFLDgTEfq0Io_HtUVsAv2L0HZnT8J1Bch6mSqp9BkfHSWNQ3Q9XAr_XovEuY_5AAAAIAAAAAnc-GbLwywl6XfjBZTbBgWmdg--LZSMfZYDXA5gTBaKPjem-8b-ZCFeXApZfHo2uG92z6BGZlix6P05EYi3UbQJ6id50llpTiWrzW2OxcGE7J0vh17Vt_CW6qfAhuGUJWSnOlDr_wiVr_Mr4wf0G9D39iloP8j1rDRlRdnTh7BuxO6Gixv8n4qDGrZJQVoMcQAw0l1j4CcdKTPtw5AYHwFRQNKhb7g4hj_Uu_3VgkXrcNPj0VX7I713-VioOl-5KaKvYzkapHYJvrYeuDE_Od6utexBQCF-76lQMWoCQbfIA
+    </Token>
+</s:Header>
+<s:Body>
+    <CreateUserResponse xmlns="http://novonordisk-us.com/PlatformService/v2">
+        <CreateUserResult xmlns:a="http://schemas.datacontract.org/2004/07/Novo.Entities"
+                          xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+            <a:ResponseMessages xmlns:b="http://tempuri.org/"/>
+            <a:Success>true</a:Success>
+            <a:ProductAllocationResponses xmlns:b="http://tempuri.org/"/>
+            <a:User>
+                <a:FirstName>xptest</a:FirstName>
+                <a:LastName>xptest</a:LastName>
+                <a:LastUpdatedDate>0001-01-01T00:00:00</a:LastUpdatedDate>
+                <a:MckessonResponse/>
+                <a:MiddleName i:nil="true"/>
+                <a:SecurityQuestionId>1</a:SecurityQuestionId>
+                <a:UserEmail>xptest20180102@test.com</a:UserEmail>
+                <a:UserId>1013372</a:UserId>
+            </a:User>
+        </CreateUserResult>
+    </CreateUserResponse>
+</s:Body>
+</s:Envelope> --------------------------------------
+
+
+        03.01.2018 11:04:28.073 *INFO* [10.39.68.48 [1514999068016] POST /content/fiasp/en/get-more-information.registerSite.html HTTP/1.1] org.apache.cxf.servicesdiabetes.PlatformServiceV2Service.PlatformService.V2Port.PlatformService.V2 Outbound Message --------------------------- ID: 196 Address: https://c4cservices.cornerstones4care.nnittest.com/NovoPlatform.svc Encoding: UTF-8 Http-Method: POST Content-Type: text/xml Headers: {Accept=[*/*], SOAPAction=["http://novonordisk-us.com/PlatformService/v2/PlatformService.V2/CreateUser"]} Payload: <soap:Envelope
+xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+<soap:Header>
+    <Auth xmlns="Token">Key:dAByAGUAcwBpAGIAYQA6ADkAbABHAHQAMgA3AFgAYQBoAFYAYQBYAGkAYgB2AG0AMAAxAHQAcABJAHcAPQA9AA==
+    </Auth>
+</soap:Header>
+<soap:Body>
+    <CreateUser xmlns="http://novonordisk-us.com/PlatformService/v2"
+                xmlns:ns2="http://schemas.datacontract.org/2004/07/Novo.Entities" xmlns:ns3="http://tempuri.org/"
+                xmlns:ns4="http://schemas.microsoft.com/2003/10/Serialization/"
+                xmlns:ns5="http://schemas.datacontract.org/2004/07/System.ServiceModel"
+                xmlns:ns6="http://schemas.microsoft.com/2003/10/Serialization/Arrays"
+                xmlns:ns7="http://schemas.datacontract.org/2004/07/System"
+                xmlns:ns8="http://schemas.datacontract.org/2004/07/Novo.Platform.Data.Models">
+        <request>
+            <ns2:ProductRequests xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+            <ns2:UserProfile>
+                <ns2:ActivityCode>000930031</ns2:ActivityCode>
+                <ns2:Address1>10 N Clovis st</ns2:Address1>
+                <ns2:Address2></ns2:Address2>
+                <ns2:BirthDate>1985-01-01T00:00:00.000</ns2:BirthDate>
+                <ns2:City>Clovis</ns2:City>
+                <ns2:EmailAddress>fiasp10@test.com</ns2:EmailAddress>
+                <ns2:FirstName>afirstname</ns2:FirstName>
+                <ns2:GuardianEmail xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                <ns2:GuardianFirstName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                <ns2:GuardianLastName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                <ns2:GuardianPermission>false</ns2:GuardianPermission>
+                <ns2:IndividualPreferences>
+                    <ns2:IndividualPreferences>
+                        <ns2:TagId>nni:medication/type1/INSTYPE/FIASP/TIMEOT_3M</ns2:TagId>
+                        <ns2:Type>BrandPreferences</ns2:Type>
+                    </ns2:IndividualPreferences>
+                </ns2:IndividualPreferences>
+                <ns2:IsCaregiver>false</ns2:IsCaregiver>
+                <ns2:IsParent>false</ns2:IsParent>
+                <ns2:Language>en</ns2:Language>
+                <ns2:LastName>alastname</ns2:LastName>
+                <ns2:MiddleName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                <ns2:MobilePhone>
+                    <ns2:PhoneNumber xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                    <ns2:SMSTextOptInPreference>
+                        <ns2:OptIn>true</ns2:OptIn>
+                        <ns2:OptInDate>2018-01-03T11:04:28.021-06:00</ns2:OptInDate>
+                        <ns2:Version>2</ns2:Version>
+                    </ns2:SMSTextOptInPreference>
+                    <ns2:VoiceOptInPreference>
+                        <ns2:OptIn>true</ns2:OptIn>
+                        <ns2:OptInDate>2018-01-03T11:04:28.021-06:00</ns2:OptInDate>
+                        <ns2:Version>2</ns2:Version>
+                    </ns2:VoiceOptInPreference>
+                </ns2:MobilePhone>
+                <ns2:Password>Test1234</ns2:Password>
+                <ns2:PatientBirthDate>0001-01-01T00:00:00.000</ns2:PatientBirthDate>
+                <ns2:PatientFirstName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                <ns2:PatientLastName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                <ns2:PatientMiddleName xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                <ns2:PrimaryPhone>
+                    <ns2:PhoneNumber>2012061805</ns2:PhoneNumber>
+                    <ns2:SMSTextOptInPreference>
+                        <ns2:OptIn>true</ns2:OptIn>
+                        <ns2:OptInDate>2018-01-03T11:04:28.021-06:00</ns2:OptInDate>
+                        <ns2:Version>2</ns2:Version>
+                    </ns2:SMSTextOptInPreference>
+                    <ns2:VoiceOptInPreference>
+                        <ns2:OptIn>true</ns2:OptIn>
+                        <ns2:OptInDate>2018-01-03T11:04:28.021-06:00</ns2:OptInDate>
+                        <ns2:Version>2</ns2:Version>
+                    </ns2:VoiceOptInPreference>
+                </ns2:PrimaryPhone>
+                <ns2:RegistrationSource>FIASP</ns2:RegistrationSource>
+                <ns2:SecurityAnswer>novo</ns2:SecurityAnswer>
+                <ns2:SecurityQuestionId>childhoodNickName</ns2:SecurityQuestionId>
+                <ns2:State>CA</ns2:State>
+                <ns2:SuperPalActivationCode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                <ns2:TermsAndConditionsOptIn>
+                    <ns2:OptIn>true</ns2:OptIn>
+                    <ns2:OptInDate>2018-01-03T11:04:28.021-06:00</ns2:OptInDate>
+                    <ns2:Version>2</ns2:Version>
+                </ns2:TermsAndConditionsOptIn>
+                <ns2:TypeOfDiabetes>TYPE1</ns2:TypeOfDiabetes>
+                <ns2:UserEmail>fiasp10@test.com</ns2:UserEmail>
+                <ns2:WebKeyId xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                <ns2:YearDiagnosed xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                <ns2:ZipCode>12345</ns2:ZipCode>
+            </ns2:UserProfile>
+        </request>
+    </CreateUser>
+</soap:Body>
+</soap:Envelope> --------------------------------------
+        03.01.2018 11:04:40.084 *INFO* [10.39.68.48 [1514999068016] POST /content/fiasp/en/get-more-information.registerSite.html HTTP/1.1] org.apache.cxf.servicesdiabetes.PlatformServiceV2Service.PlatformService.V2Port.PlatformService.V2 Inbound Message ---------------------------- ID: 196 Response-Code: 200 Encoding: UTF-8 Content-Type: text/xml; charset=utf-8 Headers: {Content-Length=[1330], content-type=[text/xml; charset=utf-8], Date=[Wed, 03 Jan 2018 17:04:39 GMT], Server=[Microsoft-IIS/8.5], X-Powered-By=[ASP.NET]}{Content-Length=[1330], content-type=[text/xml; charset=utf-8], Date=[Wed, 03 Jan 2018 17:04:39 GMT], Server=[Microsoft-IIS/8.5], X-Powered-By=[ASP.NET]} Payload: <s:Envelope
+xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+<s:Header>
+    <Token xmlns="NovoSSO">
+        gAAAAAiETFmSgAzaYkcJHaGTINcs5Ou5GBQTutkcyDjh0zTTnFs8I6SdDbbfR6Kt14PNhVvqyMkIfLFJhfutWh72tZxSCfGVGti20DWvanLQY3aGgMGyTefZbInxXSDiXyEJpiwDQagZQzUedSO4G6QsApvPGnJFy98yVKp3bBsIFiYE5AAAAIAAAAAyvNEH43yOQ4rc8jLcQRNh1NitUFbrunCpoExZn3o_GlgzUjDlKIqF6ERIEv1_-0w0BpbiSweR1LsO8EfHsaQsgY2BZng2ldNOlvXWprEdpq7KMpRK2XFfK--eQDXJUwQNxrVkjmk-bmvQhuvLvljwn3iWvikJadxzHV7JHa3033oT98CAo-YtQopAc4Aq39B-xBehx58KewEnAq9zFyIAbM2m9UC6lOhBObV2Z2BI3WLQqu6cqxRgQXks3rXiT8qJVLJKx-2hBkm5W63a4DadvtN-TYsMq40_i9NDwg2CVw
+    </Token>
+</s:Header>
+<s:Body>
+    <CreateUserResponse xmlns="http://novonordisk-us.com/PlatformService/v2">
+        <CreateUserResult xmlns:a="http://schemas.datacontract.org/2004/07/Novo.Entities"
+                          xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+            <a:ResponseMessages xmlns:b="http://tempuri.org/"/>
+            <a:Success>true</a:Success>
+            <a:ProductAllocationResponses xmlns:b="http://tempuri.org/"/>
+            <a:User>
+                <a:FirstName>afirstname</a:FirstName>
+                <a:LastName>alastname</a:LastName>
+                <a:LastUpdatedDate>0001-01-01T00:00:00</a:LastUpdatedDate>
+                <a:MckessonResponse/>
+                <a:MiddleName i:nil="true"/>
+                <a:SecurityQuestionId>1</a:SecurityQuestionId>
+                <a:UserEmail>fiasp10@test.com</a:UserEmail>
+                <a:UserId>1013387</a:UserId>
+            </a:User>
+        </CreateUserResult>
+    </CreateUserResponse>
+</s:Body>
+</s:Envelope> --------------------------------------
+
+
         18.08.2017 11:28:55.488 *INFO* [10.39.68.43 [1503073734780] POST /content/heartoftype2/en/sign-up-for-more-information.doesEmailExists.html HTTP/1.1] org.apache.cxf.servicesdiabetes.PlatformServiceV2Service.PlatformService.V2Port.PlatformService.V2 Inbound Message ---------------------------- ID: 3 Response-Code: 200 Encoding: UTF-8 Content-Type: text/xml; charset=utf-8 Headers: {Content-Length=[242], content-type=[text/xml; charset=utf-8], Date=[Fri, 18 Aug 2017 16:28:55 GMT], Server=[Microsoft-IIS/8.5], X-Powered-By=[ASP.NET]}{Content-Length=[242], content-type=[text/xml; charset=utf-8], Date=[Fri, 18 Aug 2017 16:28:55 GMT], Server=[Microsoft-IIS/8.5], X-Powered-By=[ASP.NET]} Payload: <s:Envelope
 xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
 <s:Body>
